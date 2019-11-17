@@ -4,27 +4,24 @@
         <div class="login-box">
             <h1>Login</h1>
             <div class="textbox">
-                <ion-icon name="person"></ion-icon>
+                <v-ion-icon name="person"></v-ion-icon>
                 <input type="text" placeholder="Benutzer" name="" value="">
             </div>
 
             <div class="textbox">
-                <ion-icon name="lock"></ion-icon>
+                <v-ion-icon name="lock"></v-ion-icon>
                 <input type="text" placeholder="Passwort" name="" value="">
             </div>
             <input class="btn" type="button" name="" value="Anmelden">
-
-
-
+            <input class="btn" type="button" name="" value="Registrieren">
         </div>
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </div>
 </template>
 
 <script>
     export default {
         // gebt jeder Page einen eigenen Namen
-        name: 'template',
+        name: 'Login',
 
         // benötigte Komponenten
         components: {},
@@ -54,7 +51,7 @@
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background: lightblue;
+        background: image();
         background-size: cover;
     }
     .login-box{
@@ -63,12 +60,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: #000000;
     }
     .login-box h1{
         float: left;
         font-size: 40px;
-        border-bottom: 6px solid #f1f1f1;
+        border-bottom: 6px solid #000000;
         margin-bottom: 50px;
         padding: 13px 0;
     }
@@ -78,7 +75,7 @@
         font-size: 20px;
         padding:8px 0;
         margin: 8px 0;
-        border-bottom: 1px solid #f1f1f1;
+        border-bottom: 1px solid #000000;
     }
     .textbox i{
         width: 26px;
@@ -89,7 +86,7 @@
         border: none;
         outline: none;
         background: none;
-        color: white;
+        color: #000000;
         font-size: 18px;
         width: 80%;
         float: left;
@@ -97,8 +94,8 @@
     }
     .btn{
         background: none;
-        border: 2px solid #f1f1f1;
-        color: white;
+        border: 2px solid #000000;
+        color: #000000;
         padding: 5px;
         font-size: 18px;
         cursor: pointer;
@@ -106,11 +103,13 @@
     }
     .btn{
         background: none;
-        border: 2px solid #f1f1f1;
-        color: white;
+        border: 2px solid #000000;
+        color: #000000;
         padding: 5px;
         font-size: 18px;
         cursor: pointer;
         margin: 12px 0;
     }
+    <img src="../assets/184079.jpg" height="1473" width="2000"/><img src="../assets/184079.jpg" height="1473"
+                                                                     width="2000"/><img src="../assets/landkarte.png"/>
 </style>
