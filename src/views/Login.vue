@@ -51,7 +51,7 @@
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background: image();
+        /*background: image();*/
         background-size: cover;
     }
     .login-box{
@@ -110,6 +110,6 @@
         cursor: pointer;
         margin: 12px 0;
     }
-    <img src="../assets/184079.jpg" height="1473" width="2000"/><img src="../assets/184079.jpg" height="1473"
-                                                                     width="2000"/><img src="../assets/landkarte.png"/>
+    /*<img src="../assets/184079.jpg" height="1473" width="2000"/><img src="../assets/184079.jpg" height="1473"*/
+    /*                                                                 width="2000"/><img src="../assets/landkarte.png"/>*/
 </style>
