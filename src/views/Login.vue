@@ -1,92 +1,115 @@
 <template>
-    <v-app id="inspire">
-        <v-content>
-            <v-container
-                    class="fill-height"
-                    fluid
-            >
-                <v-row
-                        align="center"
-                        justify="center"
-                >
-                    <v-col
-                            cols="12"
-                            sm="8"
-                            md="4"
-                    >
-                        <v-card class="elevation-12">
-                            <v-toolbar
-                                    color="primary"
-                                    dark
-                                    flat
-                            >
-                                <v-toolbar-title>Login form</v-toolbar-title>
-                                <v-spacer/>
-                                <v-tooltip bottom>
-                                    <template v-slot:activator="{ on }">
-                                        <v-btn
-                                                :href="source"
-                                                icon
-                                                large
-                                                target="_blank"
-                                                v-on="on"
-                                        >
-                                            <v-icon>mdi-code-tags</v-icon>
-                                        </v-btn>
-                                    </template>
-                                    <span>Source</span>
-                                </v-tooltip>
-                                <v-tooltip right>
-                                    <template v-slot:activator="{ on }">
-                                        <v-btn
-                                                icon
-                                                large
-                                                href="https://codepen.io/johnjleider/pen/pMvGQO"
-                                                target="_blank"
-                                                v-on="on"
-                                        >
-                                            <v-icon>mdi-codepen</v-icon>
-                                        </v-btn>
-                                    </template>
-                                    <span>Codepen</span>
-                                </v-tooltip>
-                            </v-toolbar>
-                            <v-card-text>
-                                <v-form>
-                                    <v-text-field
-                                            label="Login"
-                                            name="login"
-                                            prepend-icon="mdi-account"
-                                            type="text"
-                                    />
+    <div class="body-1">
+        <!-- HTML-Code aus dem Body-Tag hier einfügen -->
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <v-ion-icon name="person"></v-ion-icon>
+                <input type="text" placeholder="Benutzer" name="" value="">
+            </div>
 
-                                    <v-text-field
-                                            id="password"
-                                            label="Password"
-                                            name="password"
-                                            prepend-icon="mdi-textbox-password"
-                                            type="password"
-                                    />
-                                </v-form>
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-spacer/>
-                                <v-btn color="primary" to="/home">
-                                    Login
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </v-content>
-    </v-app>
+            <div class="textbox">
+                <v-ion-icon name="lock"></v-ion-icon>
+                <input type="text" placeholder="Passwort" name="" value="">
+            </div>
+            <input class="btn" type="button" name="" value="Anmelden">
+            <input class="btn" type="button" name="" value="Registrieren">
+        </div>
+    </div>
 </template>
 
 <script>
     export default {
-        props: {
-            source: String,
-        }
+        // gebt jeder Page einen eigenen Namen
+        name: 'Login',
+
+        // benötigte Komponenten
+        components: {},
+
+        // entspricht den HTML-Attributen
+        props: {},
+
+        // Variablen-Speicher
+        data() {
+            return {}
+        },
+
+        // reagieren auf prop-Veränderung
+        watch: {},
+
+        // interne Methoden
+        methods: [],
+
+        // Initialisierung
+        created() {}
     }
 </script>
+
+<style scoped>
+    /* CSS für diese Seite hier einfügen */
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: image();
+        background-size: cover;
+    }
+    .login-box{
+        width: 280px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+    }
+    .login-box h1{
+        float: left;
+        font-size: 40px;
+        border-bottom: 6px solid #000000;
+        margin-bottom: 50px;
+        padding: 13px 0;
+    }
+    .textbox{
+        width: 100%;
+        overflow: hidden;
+        font-size: 20px;
+        padding:8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid #000000;
+    }
+    .textbox i{
+        width: 26px;
+        float: left;
+        text-align: center;
+    }
+    .textbox input{
+        border: none;
+        outline: none;
+        background: none;
+        color: #000000;
+        font-size: 18px;
+        width: 80%;
+        float: left;
+        margin: 0 10px;
+    }
+    .btn{
+        background: none;
+        border: 2px solid #000000;
+        color: #000000;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 12px 0;
+    }
+    .btn{
+        background: none;
+        border: 2px solid #000000;
+        color: #000000;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 12px 0;
+    }
+    <img src="../assets/184079.jpg" height="1473" width="2000"/><img src="../assets/184079.jpg" height="1473"
+                                                                     width="2000"/><img src="../assets/landkarte.png"/>
+</style>
