@@ -8,26 +8,58 @@
       <v-list dense>
         <v-list-item link :to="{name:'Overview'}">
           <v-list-item-action>
-            <v-icon>mdi-spa</v-icon>
+            <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Overview</v-list-item-title>
+            <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
-            <v-icon>mdi-cart</v-icon>
+            <v-icon>mdi-map</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Order</v-list-item-title>
+            <v-list-item-title>Weltkarte</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name:'addFoto'}">
+          <v-list-item-action>
+            <v-icon>mdi-camera</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>addFoto</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name:'TicketLaden'}">
+          <v-list-item-action>
+            <v-icon>mdi-airplane</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>addTicket</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name:'PinSetzen'}">
+          <v-list-item-action>
+            <v-icon>mdi-pin</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>addPin</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
+            <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Country</v-list-item-title>
+            <v-list-item-title>Logout</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name: 'Hilfe'}">
+          <v-list-item-action>
+            <v-icon>mdi-help</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Hilfe</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -35,13 +67,14 @@
 
     <v-app-bar app right dark
                src="http://picsum.photos/1920/100?blur">
-      <v-toolbar-title>Gras-Shoppers</v-toolbar-title>
+      <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
+
       <v-btn icon :to="{name:'Order'}">
-        <v-icon>mdi-cart</v-icon>
+        <v-icon>mdi-account</v-icon>
       </v-btn>
 
       <v-btn v-if="!isLoggedIn" icon :to="{name:'Login'}">
