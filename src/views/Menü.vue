@@ -1,16 +1,7 @@
 <template>
     <div class="body-1">
         <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-        <div class="topnav">
-            <a class="active" href="menu.html">Home</a>
-            <a href="meinetickets.html">meine Tickets</a>
-            <a href="findFriends.html">Freunde finden</a>
-            <a href="pin.html">Pin setzen</a>
-            <a href="addFoto.html">Fotos </a>
-            <a href="help.html">Hilfe</a>
-            <a href="profile.html">Profil</a>
-            <a href="index.html">Logout</a>
-        </div>
+
     </div>
 </template>
 

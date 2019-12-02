@@ -6,7 +6,7 @@
             right
     >
       <v-list dense>
-        <v-list-item link :to="{name:'Overview'}">
+        <v-list-item link :to="{name:'findFriends'}">
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
@@ -14,7 +14,7 @@
             <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link :to="{name:'Order'}">
+        <v-list-item link :to="{name:'Menü'}">
           <v-list-item-action>
             <v-icon>mdi-map</v-icon>
           </v-list-item-action>
@@ -73,7 +73,7 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <v-btn icon :to="{name:'Order'}">
+      <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
       </v-btn>
 

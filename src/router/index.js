@@ -92,7 +92,7 @@ export default new VueRouter({
         },
         {
             path: '/ticketladen',
-            name: 'Ticketladen',
+            name: 'TicketLaden',
             component: TicketLaden
         },
     ]
