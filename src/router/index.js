@@ -29,5 +29,6 @@ export default new VueRouter({
             name: 'Order',
             component: Order
         },
+
     ]
 })
