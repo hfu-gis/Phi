@@ -66,7 +66,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app right dark
-               src="http://picsum.photos/1920/100?blur">
+               src="http://picsum.photos/id/912/1920/100?blur">
       <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
       <v-btn icon>
