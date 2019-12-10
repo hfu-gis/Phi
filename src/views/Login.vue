@@ -13,8 +13,11 @@
                 <input type="text" placeholder="Password" name="" value="">
             </div>
             <input class="btn" type="button" name="" value="Anmelden">
-            <input class="text" placeholder="Neuland? Registriere dich" name="" value="">
-            <input class="blue--text" type="button" name="" value="hier">
+            <div class="blue--text">
+            <input class="blue--text" type="button" name="" value="Registrieren">
+                <v-list-item link :to="{name:'addFoto'}">
+                </v-list-item>
+        </div>
         </div>
     </div>
 </template>
@@ -65,6 +68,7 @@
         color: black;
         box-sizing: border-box;
         box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+        background-color: rgba(96, 96, 117, 0.5);
         border-radius: 10px;
         text-align: center;
     }
@@ -103,7 +107,7 @@
     }
     .btn{
         width: 30%;
-        background: none;
+        background: white;
         border: 1px solid #000000;
         color: #000000;
         padding: 5px;

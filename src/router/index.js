@@ -15,6 +15,7 @@ import Profil from '../views/Profil';
 import Ticket1 from '../views/Ticket1';
 import Ticket2 from '../views/Ticket2';
 import TicketLaden from '../views/TicketLaden';
+import Registrieren from "../views/Registrieren";
 
 Vue.use(VueRouter)
 
@@ -95,5 +96,10 @@ export default new VueRouter({
             name: 'TicketLaden',
             component: TicketLaden
         },
+        {
+            path: '/registrieren',
+            name: 'Registrieren',
+            component: Registrieren
+        }
     ]
 })
