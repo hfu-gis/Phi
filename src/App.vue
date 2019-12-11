@@ -73,6 +73,10 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
+      <v-btn icon :to="{name:'Registration'}">
+        <v-icon>mdi-account-plus</v-icon>
+      </v-btn>
+
       <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
       </v-btn>

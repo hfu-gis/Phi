@@ -16,6 +16,7 @@ import Ticket1 from '../views/Ticket1';
 import Ticket2 from '../views/Ticket2';
 import TicketLaden from '../views/TicketLaden';
 import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
+import Registration from "../views/Registration";
 
 Vue.use(VueRouter)
 
@@ -100,6 +101,11 @@ export default new VueRouter({
             path: '/interaktiveWeltkarte',
             name: 'interaktiveWeltkarte',
             component: interaktiveWeltkarte
+        },
+        {
+            path: '/register',
+            name: 'Registration',
+            component: Registration
         },
     ]
 })
