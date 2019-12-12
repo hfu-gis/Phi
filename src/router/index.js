@@ -15,7 +15,8 @@ import Profil from '../views/Profil';
 import Ticket1 from '../views/Ticket1';
 import Ticket2 from '../views/Ticket2';
 import TicketLaden from '../views/TicketLaden';
-import Registrieren from "../views/Registrieren";
+import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
+import Registration from "../views/Registration";
 
 Vue.use(VueRouter)
 
@@ -97,9 +98,14 @@ export default new VueRouter({
             component: TicketLaden
         },
         {
-            path: '/registrieren',
-            name: 'Registrieren',
-            component: Registrieren
-        }
+            path: '/interaktiveWeltkarte',
+            name: 'interaktiveWeltkarte',
+            component: interaktiveWeltkarte
+        },
+        {
+            path: '/register',
+            name: 'Registration',
+            component: Registration
+        },
     ]
 })
