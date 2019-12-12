@@ -13,10 +13,11 @@
                 <input type="text" placeholder="Password" name="" value="">
             </div>
             <input class="btn" type="button" name="" value="Anmelden">
-            <div class="blue--text">
-            <input class="blue--text" type="button" name="" value="Registrieren">
-                <v-list-item link :to="{name:'addFoto'}">
-                </v-list-item>
+            <div class="text">
+                <v-btn icon :to="{name:'Registration'}">
+                    <v-icon>registration mdi-account-plus</v-icon>
+                    <input class="blue--text" type="button" name="" value="Registrieren">
+                </v-btn>
         </div>
         </div>
     </div>
