@@ -5,18 +5,17 @@
             <h1>Login</h1>
             <div class="textbox">
                 <v-ion-icon name="person"></v-ion-icon>
-                <input type="text" placeholder="Benutzername" name="" value="">
+                <input type="text" placeholder="Username" name="" value="">
             </div>
 
             <div class="textbox">
-                <v-ion-icon name="lock"></v-ion-icon>
                 <input type="text" placeholder="Password" name="" value="">
             </div>
-            <input class="btn" type="button" name="" value="Anmelden">
+            <input class="btn" type="button" name="" value="log in">
             <div class="text">
                 <v-btn icon :to="{name:'Registration'}">
                     <v-icon>registration mdi-account-plus</v-icon>
-                    <input class="blue--text" type="button" name="" value="Registrieren">
+                    <input class="blue-grey--text" type="button" name="" value="Register">
                 </v-btn>
         </div>
         </div>
@@ -52,7 +51,7 @@
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
-    body{
+    .body-1{
         margin: 0;
         padding: 0;
         font-family: sans-serif;
@@ -69,7 +68,7 @@
         color: black;
         box-sizing: border-box;
         box-shadow: 0 15px 25px rgba(0,0,0,0.5);
-        background-color: rgba(96, 96, 117, 0.5);
+        background-color: rgba(125, 199, 228, 0.5);
         border-radius: 10px;
         text-align: center;
     }
