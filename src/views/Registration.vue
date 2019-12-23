@@ -49,6 +49,7 @@
 </template>
 
 <script>
+    //import db from '../db'
     import db from '../db'
     export default {
         props: {},
@@ -68,13 +69,13 @@
                 country: '',
                 isAlreadyRegistered: false
             },
-            countries: [],
+            countries: ['USA'],
             nameRules: [
-                value => (!!value && value.trim().length > 0) || 'Field is required',
-                value => (value && value.length <= 25) || 'Field must be less than 25 characters',
+            //    value => (!!value && value.trim().length > 0) || 'Field is required',
+             //   value => (value && value.length <= 25) || 'Field must be less than 25 characters',
             ],
             selectionRules: [
-                value => !!value || 'Field is required'
+             //   value => !!value || 'Field is required'
             ]
         }),
         methods: {
@@ -94,11 +95,11 @@
             }
         },
         created() {
-            let docRef = db.collection('LegalCountries')
+            let docRef = db.collection('countries')
             docRef.get().then(docs => {
                 docs.forEach(doc => this.countries.push(doc.data().name))
             })
-            docRef = db.collection('User').doc( 'Artingo')
+            docRef = db.collection('User').doc( '')
             docRef.get().then(doc => this.userData = doc.data())
         }
     }

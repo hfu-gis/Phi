@@ -10,10 +10,12 @@ const firebaseConfig = {
   messagingSenderId: "464290458046",
   appId: "1:464290458046:web:8ec93158443c01c614b1ef",
   measurementId: "G-0W7F1JGL2H"
+};
 
-}
-
-export const db = firebase.initializeApp(firebaseConfig).firestore
+const db = firebase.initializeApp(firebaseConfig).firestore()
+export default db
 // This is not always necessary
 const { TimeStamp, GeoPoint } = firebase.firestore
 export { TimeStamp, GeoPoint }
+
+

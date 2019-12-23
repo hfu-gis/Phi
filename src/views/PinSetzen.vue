@@ -3,8 +3,8 @@
         <!-- HTML-Code aus dem Body-Tag hier einfügen -->
 
 
-        <header><h1>Länder suchen</h1></header>
-        <header><h2>wähle Wunschländer aus</h2></header>
+        <header><h1 class="h1">Länder suchen</h1></header>
+        <header><h2 class="h2">wähle Wunschländer aus</h2></header>
 
         <input type="text" placeholder="Search..">
 
@@ -52,6 +52,8 @@
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
+    .h1{font-size: 40px; font-family: Arial; font-weight: lighter; margin-top: -60%}
+    .h2{font-size:20px; font-family: Arial; font-weight: lighter}
     body {
         background: #e6e6e6;
     }

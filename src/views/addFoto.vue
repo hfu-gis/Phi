@@ -3,7 +3,7 @@
         <!-- HTML-Code aus dem Body-Tag hier einfügen -->
 
 
-        <header><h1>Fotos hinzufügen</h1></header>
+        <header><h1 class="h1">Fotos hinzufügen</h1></header>
 
 
         <form class="box" method="post" action="" enctype="multipart/form-data">
@@ -46,6 +46,7 @@
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
+    .h1{font-size: 40px; font-family: Arial; font-weight: lighter; margin-top: -60%}
     body{
         margin: 0;
         padding: 0;

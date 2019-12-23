@@ -118,7 +118,7 @@
     methods: {
     },
     created() {
-      this.$router.push({name: 'Overview'})
+      // this.$router.push({name: 'Overview'})
     }
   }
 </script>

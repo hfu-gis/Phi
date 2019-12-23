@@ -1,8 +1,8 @@
 <template>
-    <div class="body-1">
+    <div>
         <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-        <header><h1>interaktive Weltkarte</h1></header>
-        <header><h2>wähle bereiste Länder aus</h2></header>
+        <header><h1 class="h1">interaktive Weltkarte</h1></header>
+        <header><h2 class="h2">wähle bereiste Länder aus</h2></header>
 
     </div>
 </template>
@@ -27,7 +27,7 @@
         watch: {},
 
         // interne Methoden
-        methods: [],
+        methods: {},
 
         // Initialisierung
         created() {}
@@ -36,5 +36,7 @@
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
+.h1{font-size: 40px; font-family: Arial; font-weight: lighter; margin-top: -60%}
+    .h2{font-size:20px; font-family: Arial; font-weight: lighter}
 
 </style>
