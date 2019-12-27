@@ -28,12 +28,6 @@
             </v-col>
 
             <v-col cols="12" sm="6" md="6">
-                <v-text-field label="Street" v-model="userData.streetName" required
-                              :rules="nameRules"/>
-                <v-text-field label="No" v-model="userData.streetNr" required
-                              :rules="nameRules"/>
-                <v-text-field label="ZIP" v-model="userData.zipCode" required
-                              :rules="nameRules"/>
                 <v-text-field label="City" v-model="userData.city" required
                               :rules="nameRules"/>
                 <v-select label="Country" :items="countries" v-model="userData.country" required clearable

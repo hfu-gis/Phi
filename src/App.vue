@@ -69,6 +69,20 @@
                src="http://picsum.photos/id/912/1920/100?blur">
       <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
+
+      <v-autocomplete v-model="model"
+                      :items="items"
+                      :loading="isLoading"
+                      :search-input.sync="search"
+                      color="white"
+                      hide-no-data
+                      hide-selected
+                      item-text="Description"
+                      item-value="API"
+                      placeholder="search..."
+                      return-object>
+      </v-autocomplete>
+
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
