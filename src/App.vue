@@ -6,6 +6,7 @@
             right
     >
       <v-list dense>
+
         <v-list-item link :to="{name:'findFriends'}">
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
@@ -69,7 +70,7 @@
                src="http://picsum.photos/id/912/1920/100?blur">
       <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
-
+      
       <v-autocomplete v-model="model"
                       :items="items"
                       :loading="isLoading"
@@ -86,6 +87,7 @@
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
+
 
       <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
@@ -128,7 +130,7 @@
     methods: {
     },
     created() {
-      // this.$router.push({name: 'Overview'})
+       this.$router.push({name: 'Startseite'})
     }
   }
 </script>
