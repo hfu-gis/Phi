@@ -1,19 +1,22 @@
 <template>
-    <div class="body-1">
+    <div class="section">
         <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-        <header><h1>Travelmap</h1></header>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="login.html">Login</a>
-            <a href="help.html">Hilfe</a>
-        </div>
+        <h1>EXPLORE. DREAM. DISCOVER.</h1>
+        <p>we help you turning your travel moments into lifetime memories.</p>
+        <p>Share your travel journey with family and friends or get some travel inspiration by following others on their travels.  </p>
+            <div class="video-container">
+            <div class=".color-overlay"></div>
+        <video autoplay loop muted>
+            <iframe src="https://www.youtube.com/embed/2bW68nM0gk8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+    </div>
     </div>
 </template>
 
 <script>
     export default {
         // gebt jeder Page einen eigenen Namen
-        name: 'template',
+        name: 'Startseite',
 
         // benötigte Komponenten
         components: {},
@@ -39,34 +42,52 @@
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-image: url("https://wallpaperplay.com/walls/full/7/9/a/184079.jpg");
-        background-size: cover;
-    }
-
-
-    /* Add background color to the top navigation */
-    .topnav {
-        background-color: cornflowerblue;
+    .section{
+     position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
     }
 
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
+    .section h1 {
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+        font-size: 6rem;
+        font-family: Roboto-RegularItalic;
+        padding: 20px;
+        margin: 15px;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    .section h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: Calibri;
+        padding: 20px;
+        margin: 15px;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: lightblue;
+        width:100%;
+        height: 90vh;
+        opacity: 0.5;
     }
 
 
-    .topnav a.active {
-        background-color: mediumslateblue;
-        color: white;
-    }
 </style>
