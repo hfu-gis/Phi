@@ -1,93 +1,116 @@
 <template>
-    <div class="section">
-        <!-- HTML-Code aus dem Body-Tag hier einfügen -->
+    <div>
+        <transition-group name='fade' tag='div'>
+            <div v-for="i in [currentIndex]" :key='i'>
+                <img :src="currentImg" />
+            </div>
+        </transition-group>
+        <a class="prev" @click="prev" href='#'>&#10094;</a>
+        <a class="next" @click="next" href='#'>&#10095;</a>
         <h1>EXPLORE. DREAM. DISCOVER.</h1>
         <p>we help you turning your travel moments into lifetime memories.</p>
         <p>Share your travel journey with family and friends or get some travel inspiration by following others on their travels.  </p>
-            <div class="video-container">
-            <div class=".color-overlay"></div>
-        <video autoplay loop muted>
-            <iframe src="https://www.youtube.com/embed/2bW68nM0gk8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </video>
     </div>
-    </div>
+
 </template>
 
 <script>
+
     export default {
-        // gebt jeder Page einen eigenen Namen
-        name: 'Startseite',
-
-        // benötigte Komponenten
-        components: {},
-
-        // entspricht den HTML-Attributen
-        props: {},
-
-        // Variablen-Speicher
+        name: 'Slider',
         data() {
-            return {}
+
+            return {
+                images: [
+                    'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',
+                    'https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg',
+                    'https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg',
+                    'https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg'
+                ],
+
+                timer: null,
+                currentIndex: 0,
+            }
         },
 
-        // reagieren auf prop-Veränderung
-        watch: {},
+        mounted: function () {
+            this.startSlide();
+        },
 
-        // interne Methoden
-        methods: [],
+        methods: {
+            startSlide: function () {
+                this.timer = setInterval(this.next, 4000);
+            },
 
-        // Initialisierung
-        created() {}
+            next: function () {
+                this.currentIndex += 1
+            },
+
+            prev: function () {
+                this.currentIndex -= 1
+            }
+        },
+
+        computed: {
+            currentImg: function () {
+                return this.images[Math.abs(this.currentIndex) % this.images.length];
+            }
+        }
     }
+
 </script>
 
-<style scoped>
-    /* CSS für diese Seite hier einfügen */
-    .section{
-     position: relative;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+<style>
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: all 0.9s ease;
         overflow: hidden;
-    }
-
-    .section h1 {
-        text-align: center;
-        font-size: 6rem;
-        font-family: Roboto-RegularItalic;
-        padding: 20px;
-        margin: 15px;
-        z-index: 1;
-        opacity: 0.7;
-    }
-
-    .section h2 {
-        text-align: center;
-        font-size: 2rem;
-        font-family: Calibri;
-        padding: 20px;
-        margin: 15px;
-        z-index: 1;
-        opacity: 0.7;
-    }
-
-    .video-container {
+        visibility: visible;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .color-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: lightblue;
         width:100%;
-        height: 90vh;
-        opacity: 0.5;
+        opacity: 1;
     }
 
+    .fade-enter,
+    .fade-leave-to {
+        visibility: hidden;
+        width:100%;
+        opacity: 0;
+    }
+
+    img {
+        height:600px;
+        width:100%
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.7s ease;
+        border-radius: 0 4px 4px 0;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.9);
+    }
 
 </style>

@@ -17,6 +17,7 @@ import Ticket2 from '../views/Ticket2';
 import TicketLaden from '../views/TicketLaden';
 import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
 import Registration from "../views/Registration";
+import Feed from "../views/Feed";
 
 Vue.use(VueRouter)
 
@@ -106,6 +107,12 @@ export default new VueRouter({
             path: '/register',
             name: 'Registration',
             component: Registration
+        },
+
+        {
+            path: '/feed',
+            name: 'Feed',
+            component: Feed
         },
     ]
 })

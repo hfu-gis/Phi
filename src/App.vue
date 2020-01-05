@@ -7,6 +7,15 @@
     >
       <v-list dense>
 
+        <v-list-item link :to="{name:'Feed'}">
+          <v-list-item-action>
+            <v-icon></v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Feed</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item link :to="{name:'findFriends'}">
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
@@ -70,7 +79,7 @@
                src="http://picsum.photos/id/912/1920/100?blur">
       <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
-      
+
       <v-autocomplete v-model="model"
                       :items="items"
                       :loading="isLoading"
@@ -84,10 +93,22 @@
                       return-object>
       </v-autocomplete>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+        <v-col class="shrink">
+            <v-btn icon
+                   @click="expand = !expand"
+                >
+                <v-icon>mdi-magnify</v-icon>
+            </v-btn>
 
+            <v-expand-x-transition>
+                <v-card
+                        v-show="expand2"
+                        height="100"
+                        width="100"
+                        class="mx-auto"
+                ></v-card>
+            </v-expand-x-transition>
+        </v-col>
 
       <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
@@ -112,7 +133,7 @@
 </template>
 
 <script>
-  import Layout from './components/Layout';
+  import Layout from './components/Layout'
   export default {
     name: 'App',
     components: {
