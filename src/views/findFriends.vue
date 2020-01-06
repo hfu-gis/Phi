@@ -3,8 +3,14 @@
         <div class="top">
             <h2>Find Friends</h2>
         </div>
-        <div class="list">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Looking for someone?" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>        </div>
 
+        <div class="list">
             <div class="shadow">
                 <div class="col-sm-12">
                     <div class="col-sm-2">
@@ -156,10 +162,42 @@
         float: left;
         color: #f2f2f2;
         text-align: center;
-        padding: 20px 20px;
+        padding: 100px 100px;
         text-decoration: none;
         font-size: 17px;
     }
 
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 0px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+    }
 
+    .topnav .search-container button {
+        float: right;
+        padding: 50px 10px;
+        margin-top: 15px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    .topnav .search-container button:hover {
+        background: #ccc;
+    }
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: cornflowerblue;
+        color: white;
+        font-size: 17px;
+        border: 0px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
 </style>
