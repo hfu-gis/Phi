@@ -1,10 +1,110 @@
 <template>
-    <div class="body-1">
-        <!-- HTML-Code aus dem Body-Tag hier einfügen -->
+    <div class="container">
+        <div class="top">
+            <h2>Find Friends</h2>
+        </div>
+        <div class="list">
 
-        <header><h1>Freunde finden</h1></header>
+            <div class="shadow">
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <v-img
+                                src="https://previews.123rf.com/images/mnimpres/mnimpres1610/mnimpres161000130/64934650-illustration-travel-inspiration-zitiert-auf-koffer-silhouette-vintage-schriftzug-gep%C3%A4ck-f%C3%BCr-die-reise-ich-r.jpg"
+                                class="avatar"
+                                height="300px"
+                                width="300px">
+                        </v-img>
 
-        <input type="text" placeholder="Search..">
+                    </div>
+                    <div class="col-sm-8">
+                        <h4><a href="#">Malte Krolik</a></h4>
+                        <p><a href="#">4 mutual friends</a></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                               class="avatar"
+                               height="50px"
+                               width="50px">
+                        </v-img>                        <br>
+                        <a href="#">Send Request</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <v-img
+                                src="https://previews.123rf.com/images/mnimpres/mnimpres1610/mnimpres161000130/64934650-illustration-travel-inspiration-zitiert-auf-koffer-silhouette-vintage-schriftzug-gep%C3%A4ck-f%C3%BCr-die-reise-ich-r.jpg"
+                                class="avatar"
+                                height="300px"
+                                width="300px">
+                        </v-img>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4><a href="#">Isabel Schindler</a></h4>
+                        <p><a href="#">4 mutual friends</a></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                               class="avatar"
+                               height="50px"
+                               width="50px">
+                        </v-img>                        <br>
+                        <a href="#">Send Request</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <v-img
+                                src="https://previews.123rf.com/images/mnimpres/mnimpres1610/mnimpres161000130/64934650-illustration-travel-inspiration-zitiert-auf-koffer-silhouette-vintage-schriftzug-gep%C3%A4ck-f%C3%BCr-die-reise-ich-r.jpg"
+                                class="avatar"
+                                height="300px"
+                                width="300px">
+                        </v-img>                    </div>
+                    <div class="col-sm-8">
+                        <h4><a href="#">Leonie Schwall</a></h4>
+                        <p><a href="#">4 mutual friends</a></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                               class="avatar"
+                               height="50px"
+                               width="50px">
+                        </v-img>                        <br>
+                        <a href="#">Send Request</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <div class="col-sm-12">
+                    <div class="col-sm-2">
+                        <v-img
+                                src="https://previews.123rf.com/images/mnimpres/mnimpres1610/mnimpres161000130/64934650-illustration-travel-inspiration-zitiert-auf-koffer-silhouette-vintage-schriftzug-gep%C3%A4ck-f%C3%BCr-die-reise-ich-r.jpg"
+                                class="avatar"
+                                height="300px"
+                                width="300px">
+                        </v-img>                    </div>
+                    <div class="col-sm-8">
+                        <h4><a href="#">Patrick Ulmschneider</a></h4>
+                        <p><a href="#">4 mutual friends</a></p>
+                    </div>
+                    <div class="col-sm-2">
+                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+                        class="avatar"
+                        height="50px"
+                        width="50px">
+                        </v-img>
+
+                        <br>
+                        <a href="#">Send Request</a>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,10 +119,9 @@
         // entspricht den HTML-Attributen
         props: {},
 
-        // Variablen-Speicher
-        data() {
-            return {}
-        },
+        //Variablen-Speicher
+//            return {}
+       // },
 
         // reagieren auf prop-Veränderung
         watch: {},
@@ -31,7 +130,7 @@
         methods: [],
 
         // Initialisierung
-        created() {}
+    //    created() {}
     }
 </script>
 
@@ -57,7 +156,7 @@
         float: left;
         color: #f2f2f2;
         text-align: center;
-        padding: 14px 16px;
+        padding: 20px 20px;
         text-decoration: none;
         font-size: 17px;
     }
