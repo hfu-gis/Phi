@@ -1,5 +1,5 @@
 {
-  "name": "gis",
+  "name": "phiflugapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "core-js": "^3.3.2",
-    "firebase": "^7.5.2",
+    "firebase": "^7.6.1",
     "roboto-fontface": "*",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
@@ -24,5 +24,17 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "Das ist ein Vue-Beispiel-Projekt, dass ihr als Template für euer eigenes Projekt verwenden könnt.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu-gis/Phi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfu-gis/Phi/issues"
+  },
+  "homepage": "https://github.com/hfu-gis/Phi#readme"
 }

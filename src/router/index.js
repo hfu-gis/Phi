@@ -114,5 +114,6 @@ export default new VueRouter({
             name: 'Feed',
             component: Feed
         },
+
     ]
 })

@@ -63,7 +63,7 @@
                 country: '',
                 isAlreadyRegistered: false
             },
-            countries: ['USA'],
+            countries: ['USA','Germany'],
             nameRules: [
             //    value => (!!value && value.trim().length > 0) || 'Field is required',
              //   value => (value && value.length <= 25) || 'Field must be less than 25 characters',
