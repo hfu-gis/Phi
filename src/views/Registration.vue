@@ -1,4 +1,5 @@
 <template>
+    <v-container>
     <v-form ref="form" v-model="valid">
         <v-row v-if="success" align="center" justify="center">
             <v-card elevation="10">
@@ -35,11 +36,13 @@
                 />
             </v-col>
             <v-btn text outlined shaped
+                   color="light-blue lighten-2"
                    @click="validate">Register
             </v-btn>
 
         </v-row>
     </v-form>
+    </v-container>
 </template>
 
 <script>

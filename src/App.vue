@@ -9,7 +9,7 @@
 
         <v-list-item link :to="{name:'Feed'}">
           <v-list-item-action>
-            <v-icon></v-icon>
+            <v-icon>mdi-white-balance-sunny</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Feed</v-list-item-title>
@@ -29,7 +29,7 @@
             <v-icon>mdi-map</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Weltkarte</v-list-item-title>
+            <v-list-item-title>Worldmap</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'addFoto'}">
@@ -38,22 +38,6 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>addFoto</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link :to="{name:'TicketLaden'}">
-          <v-list-item-action>
-            <v-icon>mdi-airplane</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>addTicket</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link :to="{name:'PinSetzen'}">
-          <v-list-item-action>
-            <v-icon>mdi-pin</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>addPin</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
@@ -128,6 +112,7 @@
 
     <v-footer app>
       <span>&copy; 2019</span>
+
     </v-footer>
   </v-app>
 </template>

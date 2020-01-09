@@ -16,6 +16,7 @@
                 transition="scroll-x-transition"
                 >
         </v-carousel-item>
+
     </v-carousel>
             </v-flex>
 
@@ -32,7 +33,7 @@
                            font="Helvetica"
                         >
                             <v-btn text x-large :to="{name:'Registration'}"
-                                    color="black"
+                                    color="light-blue lighten-2"
                                     >
                                     GET STARTED NOW.</v-btn>
                         </p>
@@ -49,10 +50,21 @@
                 >
                     <v-card-text>
 
-                        <p class="text-center ma-10"
-                           font="Helvetica"
-                        >
-                            <v-icon>mdi-map</v-icon>
+                        <p class="text-center ma-10">
+
+                            <v-avatar
+                                    slot="icon"
+                                    color="light-blue lighten-2"
+                                    size="40"
+                            >
+                                <v-icon
+                                        icon="mdi-map"
+                                        color="white"
+                                >
+                                    mdi-map
+                                </v-icon>
+                            </v-avatar>
+
 
                         <p class="text-center ma-10"
                            font="Helvetica"
@@ -76,10 +88,20 @@
                 >
                     <v-card-text>
 
-                        <p class="text-center ma-10"
-                           font="Helvetica"
-                        >
-                            <v-icon>mdi-account-heart</v-icon>
+                        <p class="text-center ma-10">
+
+                            <v-avatar
+                                    slot="icon"
+                                    color="light-blue lighten-2"
+                                    size="40"
+                            >
+                                <v-icon
+                                        icon="mdi-account-heart"
+                                        color="white"
+                                >
+                                    mdi-account-heart
+                                </v-icon>
+                            </v-avatar>
 
                         <p class="text-center ma-10"
                            font="Helvetica"
@@ -104,17 +126,27 @@
                 >
                     <v-card-text>
 
-                        <p class="text-center ma-10"
-                           font="Helvetica"
-                        >
-                            <v-icon>mdi-white-balance-sunny</v-icon>
+                        <p class="text-center ma-10">
+
+                            <v-avatar
+                                    slot="icon"
+                                    color="light-blue lighten-2"
+                                    size="40"
+                            >
+                                <v-icon
+                                        icon="mdi-white-balance-sunny"
+                                        color="white"
+                                >
+                                    mdi-white-balance-sunny
+                                </v-icon>
+                            </v-avatar>
 
                         <p class="text-center ma-10"
                            font="Helvetica"
                         >
                         GET SOME INSPIRATION.{{ selected }}
                         <v-spacer>
-                            Let yourself be carried away by wanderlust. What's your next travel destinations huh?
+                            Let yourself be carried away by wanderlust. What's your next travel destination?
                         </v-spacer>
 
                         </p>
