@@ -89,13 +89,26 @@
             }
         },
         created() {
-            let docRef = db.collection('countries')
+            let docRef = db.collection('user').doc("user");
+            docRef.get().then(
+
+
+                doc => {
+                    const data = doc.data();
+                    console.log(data.name , "name")
+                }
+            );
+
+            console.log(docRef , "docRef")
+
             docRef.get().then(docs => {
                 docs.forEach(doc => this.countries.push(doc.data().name))
             })
             docRef = db.collection('User').doc( '')
             docRef.get().then(doc => this.userData = doc.data())
+
         }
+
     }
 </script>
 

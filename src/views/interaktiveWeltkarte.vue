@@ -5,18 +5,21 @@
         <article class="ueberschriften">  <!-- HTML-Code aus dem Body-Tag hier einfügen -->
             <header><h1 class="h1">interaktive Weltkarte</h1></header>
             <header><h2 class="h2">wähle bereiste Länder aus</h2></header>
+
         </article>
 <!--        svg map -->
         <article class="svgkarte">
-            <svg version="1.1" id="Ebene_1"  viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
+            <svg version="1.1" id="Ebene_1"  viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve"  >
 
-                <g>
-                      class="tooltip">
+                <g
+
+
 <!--                         Vereinigte Arabische Emirate-->
-                    <path id="AE"  class="tooltip" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M518.695,341.48l0.413-0.125l0.086,0.695l1.828-0.398
+                    <path id="AE"  fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M518.695,341.48l0.413-0.125l0.086,0.695l1.828-0.398
                         l1.929,0.064l1.409,0.076l1.6-1.723l1.738-1.645l1.475-1.586l0.445,0.877l0.317,2.029l-1.193,0.01l-0.19,1.662l0.413,0.354
                         l-1.057,0.5l-0.007,1.035l-0.68,1.045l-0.061,1.016l-0.471,0.529l-7.013-1.268l-0.894-2.563L518.695,341.48z"/>
-                         <span class="tooltiptext">Vereinigte Arabische Emirate</span>
+
+                <p id="AE" onclick="myFunction()">Click me to change my text color.</p>
 
 <!--                    Afghanistan-->
                     <path id="AF" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M541.165,310.838l2.38,1.084l1.76-0.381l0.488-1.295
@@ -45,8 +48,9 @@
                         l-0.697-0.844l-0.623-1.428l-0.574-1.41l0.126-0.486l0.718-0.932l-0.708-2.26l-0.479-1.564l-1.168-1.477l0.221-0.453l0.964-0.313
                         l0.676,0.045l0.818-0.281L436.443,413.094z M427.368,412.645l-0.594,0.246l-0.625-1.75l0.942-1.004l0.705-0.393l0.874,0.799
                         l-0.85,0.488l-0.381,0.598L427.368,412.645z"/>
+
 <!--                    Argentinien-->
-                    <path id="AR" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M245.526,553.828l-2.217,0.203l-1.19-1.436l-1.406-0.107
+                    <path  id="AR" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M245.526,553.828l-2.217,0.203l-1.19-1.436l-1.406-0.107
                         l-2.498-0.004l-0.001-8.793l0.896,1.785l1.167,2.936l3.033,2.383l3.266,1.004L245.526,553.828z M246.774,451.943l1.371,1.811
                         l0.91-2.018l2.661,0.104l0.376,0.535l4.29,4.115l1.908,0.387l2.851,1.883l2.402,1l0.335,1.133l-2.297,3.938l2.352,0.711
                         l2.622,0.398l1.845-0.42l2.116-1.996l0.38-2.283l1.157-0.492l1.17,1.488l-0.047,2.07l-1.965,1.439l-1.567,1.066l-2.634,2.563
@@ -59,6 +63,7 @@
                         l0.769-1.355l-1.054-1.217l-0.545-3.658l0.938-0.639l-0.395-3.779l0.549-3.121l0.624-2.684l1.396-1.08l-0.709-2.883l-0.008-2.676
                         l1.767-1.883l-0.054-2.387l1.332-2.758l0.005-2.566l-0.605-0.508l-1.075-4.738l1.438-2.781l-0.221-2.592l0.834-2.41l1.527-2.467
                         l1.647-1.621l-0.698-1.02l0.487-0.834l-0.074-4.279l2.542-1.256l0.8-2.629l-0.283-0.629l1.944-2.268L246.774,451.943z"/>
+
 <!--                    Österreich-->
                     <path id="AT" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M437.967,271.689l-0.178,1.417l-1.313,0.007l0.451,0.748
                         l-0.775,2.203l-0.442,0.573l-2.042,0.085l-1.177,0.766l-1.928-0.26l-3.337-0.876l-0.52-1.185l-2.307,0.592l-0.271,0.647
@@ -66,7 +71,7 @@
                         l1.12,0.105l0.727,0.706l0.217-0.586l-0.33-2.263l0.838-0.443l0.823-1.625l1.733,1.136l1.313-1.443l0.82-0.267l1.813,1.081
                         l1.096-0.183l1.073,0.665l-0.187,0.445L437.967,271.689z"/>
 <!--                    Auatralien-->
-                    <path id="AU" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M737.59,503.277l2.255,1.064l1.271-0.424l1.82-0.592
+                    <path id="AU" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5"  d="M737.59,503.277l2.255,1.064l1.271-0.424l1.82-0.592
                         l1.399,0.207l0.166,3.682l-0.799,1.084l-0.241,2.549l-0.816-0.873l-1.618,2.229l-0.483-0.174l-1.435-0.1l-1.438-2.727l-0.32-2.078
                         l-1.346-2.707l0.059-1.412L737.59,503.277z M733.307,431.662l0.839,1.875l1.498-0.9l0.772,1.012l1.12,0.938l-0.238,1.064
                         l0.497,2.066l0.354,1.209l0.587,0.295l0.633,2.076l-0.226,1.266l0.756,1.66l2.529,1.283l1.646,1.17l1.567,1.076l-0.307,0.6
@@ -91,7 +96,8 @@
                         l0.167,0.678l1.854,1.328l1.798,0.773l1.201,0.83l1.687,1.434l0.656-0.002l1.223,0.619l0.354,0.75l2.227,0.826l1.542-0.832
                         l0.456-1.303l0.473-1.072l0.29-1.324l0.711-1.912l-0.325-1.16l0.169-0.697l-0.27-1.367l0.305-1.795l0.447-0.482l-0.364-0.793
                         l0.565-1.26l0.443-1.299l0.058-0.676l0.866-0.883l0.658,1.154l0.162,1.484l0.581,0.287l0.099,0.994l0.851,1.209l0.174,1.35
-                        L733.307,431.662z"/>
+                        L733.307,431.662z"> <span class="tooltiptext">Kängurucity</span></path>
+
 <!--                    Aserbaidschan-->
                     <path id="AZ" fill="#CDCCCC" stroke="#FFFFFF" stroke-width="0.5" d="M503.347,298.823l0.692,0.81l1.031-0.006l-0.01,0.465
                         l0.952,1.73l-1.602-0.398l-1.178-1.381l-0.37-1.137L503.347,298.823z M508.881,294.302l1.032,0.211l0.4-0.787l1.394-1.253
@@ -1407,11 +1413,16 @@
 
 		</g>
             </svg>
+
         </article>
+
     </div>
 </template>
 
 <script>
+    function myFunction() {
+        document.getElementById("AE").style.color = "red";
+    }
     export default {
         // gebt jeder Page einen eigenen Namen
         name: 'interaktiveWeltkarte',
@@ -1445,6 +1456,7 @@
     /* CSS für diese Seite hier einfügen */
 .h1{font-size: 40px; font-family: Arial; font-weight: lighter}
     .h2{font-size:20px; font-family: Arial; font-weight: lighter}
+
 .svgkarte{justify-content: center;align-content: center;align-self: center}
     /*#Ebene_1{margin-top: 10%}*/
 
@@ -1462,30 +1474,6 @@
     path:hover {
         fill: cornflowerblue;
     }
-    /* Tooltip container */
-    .tooltip {
-        position: relative;
-        display: inline-block;
-    }
 
-    /* Tooltip text */
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-
-        /* Position the tooltip text */
-        position: absolute;
-        z-index: 1;
-    }
-
-    /* Show the tooltip text when you mouse over the tooltip container */
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-    }
 
 </style>

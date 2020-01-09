@@ -2,18 +2,19 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgDkd0uTQ1Zw3JploTk6dLqQNPXC1ai54",
-  authDomain: "my-travelmap-phi.firebaseapp.com",
-  databaseURL: "https://my-travelmap-phi.firebaseio.com",
-  projectId: "my-travelmap-phi",
-  storageBucket: "my-travelmap-phi.appspot.com",
-  messagingSenderId: "464290458046",
-  appId: "1:464290458046:web:8ec93158443c01c614b1ef",
-  measurementId: "G-0W7F1JGL2H"
+  apiKey: "AIzaSyDQmbeCTe9hoIzTaytO68GTRQkxhgUuuRI",
+  authDomain: "phi-2-64896.firebaseapp.com",
+  databaseURL: "https://phi-2-64896.firebaseio.com",
+  projectId: "phi-2-64896",
+  storageBucket: "phi-2-64896.appspot.com",
+  messagingSenderId: "905846599476",
+  appId: "1:905846599476:web:74166c5b07cfa21c913f61",
+  measurementId: "G-R4X80FCK1M"
 };
 
 const db = firebase.initializeApp(firebaseConfig).firestore()
 export default db
+//console.log(db)
 // This is not always necessary
 const { TimeStamp, GeoPoint } = firebase.firestore
 export { TimeStamp, GeoPoint }
