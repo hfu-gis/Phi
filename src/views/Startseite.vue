@@ -1,41 +1,130 @@
 <template>
+    <v-container>
+        <v-layout row>
+            <v-flex md12>
     <v-carousel
             cycle
             height="600"
             hide-delimiter-background
             show-arrows-on-hover
-        >
+            >
         <v-carousel-item
                 v-for="(item,i) in items"
                 :key="i"
                 :src="item.src"
-                reverse-transition="fade-transition"
+                reverse-transition="scroll-x-reverse-transition"
                 transition="scroll-x-transition"
                 >
-
-            <v-card :elevation="selected"
-
-                    color="light-blue lighten-3"
-
-            >
-                <v-card-text>
-
-                    <p class="text-center ma-10"
-                    font="Helvetica"
-                    >
-
-                        EXPLORE.
-                        DREAM.
-                        DISCOVER.{{ selected }}
-
-                    </p>
-
-                </v-card-text>
-
-            </v-card>
         </v-carousel-item>
     </v-carousel>
+            </v-flex>
 
+            <v-flex md12>
+
+                <v-card :elevation="selected"
+
+                        color="light-blue lighten-5"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-btn text x-large :to="{name:'Registration'}"
+                                    color="black"
+                                    >
+                                    GET STARTED NOW.</v-btn>
+                        </p>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-map</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                           >
+                        TRACK YOUR TRAVELS{{ selected }}
+                        <v-spacer>
+                        Keep your family up to date about your location and adventures.
+                        </v-spacer>
+                    </p>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-account-heart</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                        RIDE ALONG WITH FRIENDS{{ selected }}
+                        <v-spacer>
+                            Follow your family and friends on their trips and feel like you're in the passenger seat.
+                        </v-spacer>
+
+                        </p>
+
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-white-balance-sunny</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                        GET SOME INSPIRATION.{{ selected }}
+                        <v-spacer>
+                            Let yourself be carried away by wanderlust. What's your next travel destinations huh?
+                        </v-spacer>
+
+                        </p>
+
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
