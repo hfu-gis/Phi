@@ -1,116 +1,155 @@
 <template>
-    <div>
-        <transition-group name='fade' tag='div'>
-            <div v-for="i in [currentIndex]" :key='i'>
-                <img :src="currentImg" />
-            </div>
-        </transition-group>
-        <a class="prev" @click="prev" href='#'>&#10094;</a>
-        <a class="next" @click="next" href='#'>&#10095;</a>
-        <h1>EXPLORE. DREAM. DISCOVER.</h1>
-        <p>we help you turning your travel moments into lifetime memories.</p>
-        <p>Share your travel journey with family and friends or get some travel inspiration by following others on their travels.  </p>
-    </div>
+    <v-container>
+        <v-layout row>
+            <v-flex md12>
+    <v-carousel
+            cycle
+            height="600"
+            hide-delimiter-background
+            show-arrows-on-hover
+            >
+        <v-carousel-item
+                v-for="(item,i) in items"
+                :key="i"
+                :src="item.src"
+                reverse-transition="scroll-x-reverse-transition"
+                transition="scroll-x-transition"
+                >
+        </v-carousel-item>
+    </v-carousel>
+            </v-flex>
 
+            <v-flex md12>
+
+                <v-card :elevation="selected"
+
+                        color="light-blue lighten-5"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-btn text x-large :to="{name:'Registration'}"
+                                    color="black"
+                                    >
+                                    GET STARTED NOW.</v-btn>
+                        </p>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-map</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                           >
+                        TRACK YOUR TRAVELS{{ selected }}
+                        <v-spacer>
+                        Keep your family up to date about your location and adventures.
+                        </v-spacer>
+                    </p>
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-account-heart</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                        RIDE ALONG WITH FRIENDS{{ selected }}
+                        <v-spacer>
+                            Follow your family and friends on their trips and feel like you're in the passenger seat.
+                        </v-spacer>
+
+                        </p>
+
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+            <v-flex md4>
+
+                <v-card :elevation="selected"
+
+                        color="white"
+
+                >
+                    <v-card-text>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                            <v-icon>mdi-white-balance-sunny</v-icon>
+
+                        <p class="text-center ma-10"
+                           font="Helvetica"
+                        >
+                        GET SOME INSPIRATION.{{ selected }}
+                        <v-spacer>
+                            Let yourself be carried away by wanderlust. What's your next travel destinations huh?
+                        </v-spacer>
+
+                        </p>
+
+                    </v-card-text>
+                </v-card>
+            </v-flex>
+
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
-
     export default {
-        name: 'Slider',
-        data() {
-
+        data () {
             return {
-                images: [
-                    'https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg',
-                    'https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg',
-                    'https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg',
-                    'https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg'
+                items: [
+                    {
+                        src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                    },
+                    {
+                        src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                    },
+                    {
+                        src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                    },
+                    {
+                        src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                    },
                 ],
-
-                timer: null,
-                currentIndex: 0,
             }
         },
-
-        mounted: function () {
-            this.startSlide();
-        },
-
-        methods: {
-            startSlide: function () {
-                this.timer = setInterval(this.next, 4000);
-            },
-
-            next: function () {
-                this.currentIndex += 1
-            },
-
-            prev: function () {
-                this.currentIndex -= 1
-            }
-        },
-
-        computed: {
-            currentImg: function () {
-                return this.images[Math.abs(this.currentIndex) % this.images.length];
-            }
-        }
     }
-
 </script>
 
 <style>
-
-    .fade-enter-active,
-    .fade-leave-active {
-        transition: all 0.9s ease;
-        overflow: hidden;
-        visibility: visible;
-        position: absolute;
-        width:100%;
-        opacity: 1;
-    }
-
-    .fade-enter,
-    .fade-leave-to {
-        visibility: hidden;
-        width:100%;
-        opacity: 0;
-    }
-
-    img {
-        height:600px;
-        width:100%
-    }
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.7s ease;
-        border-radius: 0 4px 4px 0;
-        text-decoration: none;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-    }
-
-    .prev {
-        left: 0;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.9);
-    }
 
 </style>
