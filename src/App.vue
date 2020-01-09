@@ -9,7 +9,7 @@
 
         <v-list-item link :to="{name:'Feed'}">
           <v-list-item-action>
-            <v-icon></v-icon>
+            <v-icon>mdi-white-balance-sunny</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Feed</v-list-item-title>
@@ -21,7 +21,7 @@
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Friends</v-list-item-title>
+            <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'interaktiveWeltkarte'}">
@@ -29,7 +29,7 @@
             <v-icon>mdi-map</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>World Map</v-list-item-title>
+            <v-list-item-title>Worldmap</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'addFoto'}">
@@ -37,23 +37,7 @@
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Photos</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link :to="{name:'TicketLaden'}">
-          <v-list-item-action>
-            <v-icon>mdi-airplane</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Tickets</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link :to="{name:'PinSetzen'}">
-          <v-list-item-action>
-            <v-icon>mdi-pin</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Pins</v-list-item-title>
+            <v-list-item-title>addFoto</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
@@ -69,14 +53,15 @@
             <v-icon>mdi-help</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Help</v-list-item-title>
+            <v-list-item-title>Hilfe</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app right class="blue">
-      <v-toolbar-title>My Travelmap</v-toolbar-title>
+    <v-app-bar app right dark
+               src="http://picsum.photos/id/912/1920/100?blur">
+      <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
 
       <v-autocomplete v-model="model"
@@ -127,6 +112,7 @@
 
     <v-footer app>
       <span>&copy; 2019</span>
+
     </v-footer>
   </v-app>
 </template>
@@ -150,7 +136,7 @@
     methods: {
     },
     created() {
-       // this.$router.push({name: 'Startseite'}) sag dem malte dass diese pushen beim aktualisierein das dümmste ist was es gibt xd
+       this.$router.push({name: 'Startseite'})
     }
   }
 </script>
