@@ -19,6 +19,7 @@ import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
 import Registration from "../views/Registration";
 import Feed from "../views/Feed";
 
+
 Vue.use(VueRouter)
 
 export default new VueRouter({

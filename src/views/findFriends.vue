@@ -3,12 +3,14 @@
         <div class="top">
             <h2>Find Friends</h2>
         </div>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <div class="topnav">
             <form class="example" action="action_page.php">
                 <input type="text" placeholder="Looking for a traveling acquaintance?" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
-            </form>        </div>
+            </form>
+        </div>
 
         <div class="list">
             <div class="shadow">
@@ -27,16 +29,12 @@
                         <p><a href="#">4 mutual friends</a></p>
                     </div>
                     <div class="col-sm-2">
-                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
-                               class="avatar"
-                               height="50px"
-                               width="50px">
-                        </v-img>                        <br>
-                        <a href="#">Send Request</a>
+
+                        <button class="btn"><i class="fa fa-globe"></i> Add Friend</button>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <hr />
+                <hr/>
                 <div class="col-sm-12">
                     <div class="col-sm-2">
                         <v-img
@@ -51,16 +49,12 @@
                         <p><a href="#">4 mutual friends</a></p>
                     </div>
                     <div class="col-sm-2">
-                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
-                               class="avatar"
-                               height="50px"
-                               width="50px">
-                        </v-img>                        <br>
-                        <a href="#">Send Request</a>
+
+                        <button class="btn"><i class="fa fa-globe"></i> Add Friend</button>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <hr />
+                <hr/>
                 <div class="col-sm-12">
                     <div class="col-sm-2">
                         <v-img
@@ -68,22 +62,19 @@
                                 class="avatar"
                                 height="300px"
                                 width="300px">
-                        </v-img>                    </div>
+                        </v-img>
+                    </div>
                     <div class="col-sm-8">
                         <h4><a href="#">Leonie Schwall</a></h4>
                         <p><a href="#">4 mutual friends</a></p>
                     </div>
                     <div class="col-sm-2">
-                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
-                               class="avatar"
-                               height="50px"
-                               width="50px">
-                        </v-img>                        <br>
-                        <a href="#">Send Request</a>
+
+                        <button class="btn"><i class="fa fa-globe"></i> Add Friend</button>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <hr />
+                <hr/>
                 <div class="col-sm-12">
                     <div class="col-sm-2">
                         <v-img
@@ -91,20 +82,16 @@
                                 class="avatar"
                                 height="300px"
                                 width="300px">
-                        </v-img>                    </div>
+                        </v-img>
+                    </div>
                     <div class="col-sm-8">
                         <h4><a href="#">Patrick Ulmschneider</a></h4>
                         <p><a href="#">4 mutual friends</a></p>
                     </div>
                     <div class="col-sm-2">
-                        <v-img src="https://imageog.flaticon.com/icons/png/512/44/44386.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
-                        class="avatar"
-                        height="50px"
-                        width="50px">
-                        </v-img>
 
-                        <br>
-                        <a href="#">Send Request</a>
+                        <button class="btn"><i class="fa fa-globe"></i> Add Friend</button>
+
 
                     </div>
                 </div>
@@ -127,7 +114,7 @@
 
         //Variablen-Speicher
 //            return {}
-       // },
+        // },
 
         // reagieren auf prop-Veränderung
         watch: {},
@@ -136,13 +123,14 @@
         methods: [],
 
         // Initialisierung
-    //    created() {}
+        //    created() {}
     }
+
 </script>
 
 <style scoped>
     /* CSS für diese Seite hier einfügen */
-    body{
+    body {
         margin: 0;
         padding: 0;
         font-family: sans-serif;
@@ -186,9 +174,11 @@
         border: none;
         cursor: pointer;
     }
+
     .topnav .search-container button:hover {
         background: #ccc;
     }
+
     form.example button {
         float: left;
         width: 20%;
@@ -199,5 +189,18 @@
         border: 0px solid grey;
         border-left: none; /* Prevent double borders */
         cursor: pointer;
+    }
+    .btn {
+        background-color: cornflowerblue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+        background-color: RoyalBlue;
     }
 </style>
