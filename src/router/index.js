@@ -74,11 +74,5 @@ export default new VueRouter({
             component: Feed
         },
 
-        {
-            path: '/friendslist',
-            name: 'Friendslist',
-            component: friendslist
-        },
-
     ]
 })

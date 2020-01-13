@@ -26,7 +26,7 @@
         </v-list-item>
         <v-list-item link :to="{name:'friendslist'}">
           <v-list-item-action>
-            <v-icon>mdi-account-multiple</v-icon>
+            <v-icon>mdi-account-group</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Friendslist</v-list-item-title>
