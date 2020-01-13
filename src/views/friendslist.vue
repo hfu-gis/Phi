@@ -6,7 +6,7 @@
 
     >
         <v-toolbar
-                color="deep-purple accent-4"
+                color="blue"
                 dark
         >
 
