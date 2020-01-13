@@ -1,69 +1,46 @@
 <template>
-    <v-simple-table>
-        <template v-slot:default>
-            <thead>
-            <tr>
-                <th class="text-left">Countries visited</th>
-                <th class="text-left">Countries to visit</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr v-for="item in desserts" :key="item.name">
-                <td>{{ item.name }}</td>
-                <td>{{ item.calories }}</td>
-            </tr>
-            </tbody>
-        </template>
-    </v-simple-table>
-</template>
+    <v-card
+            class="mx-auto"
+            max-width="434"
+            tile
+    >
+        <v-img
+                height="100%"
+                src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+        >
+            <v-row
+                    align="end"
+                    class="fill-height"
+            >
+                <v-col
+                        align-self="start"
+                        class="pa-0"
+                        cols="12"
+                >
+                    <v-avatar
+                            class="profile"
+                            color="grey"
+                            size="164"
+                            tile
+                    >
+                        <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
+                    </v-avatar>
+                </v-col>
+                <v-col class="py-0">
+                    <v-list-item
+                            color="rgba(0, 0, 0, .4)"
+                            dark
+                    >
+                        <v-list-item-content>
+                            <v-list-item-title class="title">Max Mustermann</v-list-item-title>
+                            <v-list-item-subtitle>25, Dog-Lover, Germany </v-list-item-subtitle>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-col>
+            </v-row>
+        </v-img>
+    </v-card>
 
-<script>
-    export default {
-        data () {
-            return {
-                desserts: [
-                    {
-                        name: 'Germany',
-                        calories: `South Africa`,
-                    },
-                    {
-                        name: 'France',
-                        calories: `Sweden`,
-                    },
-                    {
-                        name: 'Italy',
-                        calories: `Canada`,
-                    },
-                    {
-                        name: 'Spain',
-                        calories: `Australia`,
-                    },
-                    {
-                        name: 'Poland',
-                        calories: `New Zealand`,
-                    },
-                    {
-                        name: 'Switzerland',
-                        calories: `Botswana`,
-                    },
-                    {
-                        name: 'United States',
-                        calories: `Peru`,
-                    },
-                    {
-                        name: 'Croatia',
-                        calories: `Russia`,
-                    },
-                    {
-                        name: 'Netherlands',
-                        calories: `Kambodia`,
-                    },
-                    {
-                        name: 'Norway',
-                        calories: `Denmark`,
-                    },
-                ],
-            }
-        },
-    }
-</script>
+
+
+
