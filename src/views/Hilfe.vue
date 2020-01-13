@@ -1,67 +1,32 @@
 <template>
-    <div class="body-1">
-        <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-
-    </div>
+<v-container>
+    <v-layout row>
+        <v-flex md12>
+            <v-card :elevation="selected"
+            color="light-blue lighten-4"
+            >
+                <v-card-text>
+                    <h1 class="text-center ma-10">
+                        Help
+                    </h1>
+                <p class="text ma-10">
+                    Have any questions or problems with our app?
+                    Someone already might have had the same issue. Have a look at the most asked questions below or write a message to our Support team and we'll get back to you asap.
+                </p>
+                </v-card-text>
+            </v-card>
+             <v-expansion-panels>
+                <v-expansion-panel
+                v-for="(question,i) in 5"
+                :key="i"
+                 >
+                <v-expansion-panel-header>Question</v-expansion-panel-header>
+                     <v-expansion-panel-content>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </v-expansion-panel-content>
+                </v-expansion-panel>
+            </v-expansion-panels>
+        </v-flex>
+    </v-layout>
+</v-container>
 </template>
-
-<script>
-    export default {
-        // gebt jeder Page einen eigenen Namen
-        name: 'template',
-
-        // benötigte Komponenten
-        components: {},
-
-        // entspricht den HTML-Attributen
-        props: {},
-
-        // Variablen-Speicher
-        data() {
-            return {}
-        },
-
-        // reagieren auf prop-Veränderung
-        watch: {},
-
-        // interne Methoden
-        methods: [],
-
-        // Initialisierung
-        created() {}
-    }
-</script>
-
-<style scoped>
-    /* CSS für diese Seite hier einfügen */
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-image: url("https://wallpaperplay.com/walls/full/7/9/a/184079.jpg");
-        background-size: cover;
-    }
-
-
-    /* Add background color to the top navigation */
-    .topnav {
-        background-color: cornflowerblue;
-        overflow: hidden;
-    }
-
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-
-    .topnav a.active {
-        background-color: mediumslateblue;
-        color: white;
-    }
-</style>

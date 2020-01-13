@@ -1,14 +1,16 @@
-<template>
+<template xmlns:font-family="http://www.w3.org/1999/xhtml">
+    <v-container>
     <div>
 
 <!--        Header and text -->
-        <article class="ueberschriften">  <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-            <header><h1 class="h1">interaktive Weltkarte</h1></header>
-            <header><h2 class="h2">wähle bereiste Länder aus</h2></header>
+  <!-- HTML-Code aus dem Body-Tag hier einfügen -->
+            <header>
+                <h1 class="text-center ma-6"
+                >interaktive worldmap</h1>
+                <p class="text-center">- choose your already travelled countries -</p>
+                </header>
 
 
-
-        </article>
 <!--        svg map -->
         <article class="svgkarte">
             <svg version="1.1" id="Ebene_1"  viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve"  >
@@ -2474,6 +2476,7 @@
         </article>
 
     </div>
+    </v-container>
 </template>
 
 <script>
