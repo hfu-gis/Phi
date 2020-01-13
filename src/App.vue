@@ -52,14 +52,43 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link :to="{name:'Login'}">
+        <v-list-item item @click.stop="dialog=true">
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Login</v-list-item-title>
+            <v-list-item-title>Logout</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+          <v-dialog
+                  v-model="dialog"
+                  max-width="350"
+          >
+              <v-card>
+                  <v-card-title class="headline">Are you sure you wanna log out from your profile?</v-card-title>
+
+                  <v-card-actions>
+                      <v-spacer></v-spacer>
+
+                      <v-btn
+                              color="light-blue lighten-3"
+                              text
+                              @click="dialog = false"
+                      >
+                          Yes
+                      </v-btn>
+
+                      <v-btn
+                              color="light-blue lighten-3"
+                              text
+                              @click="dialog = false"
+                      >
+                          No
+                      </v-btn>
+                  </v-card-actions>
+              </v-card>
+          </v-dialog>
 
         <v-list-item link :to="{name: 'hilfe'}">
           <v-list-item-action>
@@ -153,6 +182,7 @@
       return {
         isLoggedIn: false,
         drawer: false,
+          dialog: false,
       }
     },
     methods: {
