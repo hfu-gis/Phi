@@ -25,7 +25,7 @@
         <v-img
                 class="white--text align-end"
                 height="500px"
-                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                src="https://i.picsum.photos/id/640/2509/1673.jpg"
         >
             <v-card-title>My top 10 Australian beaches</v-card-title>
 

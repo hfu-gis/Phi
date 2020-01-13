@@ -71,7 +71,8 @@
                            >
                         TRACK YOUR TRAVELS{{ selected }}
                         <v-spacer>
-                        Keep your family up to date about your location and adventures.
+                        Keep your family and friends up to date about your location and adventures.
+
                         </v-spacer>
                     </p>
                     </v-card-text>
@@ -165,16 +166,19 @@
             return {
                 items: [
                     {
-                        src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+                        src: 'https://i.picsum.photos/id/1011/5472/3648.jpg',
                     },
                     {
-                        src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+                        src: 'https://i.picsum.photos/id/645/2509/1673.jpg',
                     },
                     {
-                        src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+                        src: 'https://i.picsum.photos/id/643/2365/1774.jpg',
                     },
                     {
-                        src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+                        src: 'https://i.picsum.photos/id/392/5580/3720.jpg',
+                    },
+                    {
+                        src: 'https://i.picsum.photos/id/177/2515/1830.jpg',
                     },
                 ],
             }
