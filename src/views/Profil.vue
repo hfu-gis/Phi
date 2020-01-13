@@ -50,8 +50,8 @@
       <div class ="flexitem">
           <table class="tg">
               <tr>
-                  <th class="überschrift">visited </th>
-                  <th class="überschrift">to visit</th>
+                  <th class="überschrift">Countries visited </th>
+                  <th class="überschrift">Countries to visit</th>
 
               </tr>
               <tr>
@@ -148,10 +148,18 @@
 .tg{
     border: solid black;
     margin-left: 20%;
-    width: 400px;
+    width: 550px;
+}
+.überschrift{
+
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: underline black;
 }
     .tabellentext{
-        ;
+
+        font-weight: bold;
+
     }
 
 </style>
