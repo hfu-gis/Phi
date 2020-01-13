@@ -45,7 +45,7 @@
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>addFoto</v-list-item-title>
+            <v-list-item-title>Add Photo</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'Login'}">
@@ -56,12 +56,12 @@
             <v-list-item-title>Login</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link :to="{name: 'Hilfe'}">
+        <v-list-item link :to="{name: 'hilfe'}">
           <v-list-item-action>
             <v-icon>mdi-help</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Hilfe</v-list-item-title>
+            <v-list-item-title>Help</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

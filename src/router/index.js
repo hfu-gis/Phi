@@ -33,23 +33,23 @@ export default new VueRouter({
             component: Startseite
         },
         {
-            path: '/addfoto',
+            path: '/addFoto',
             name: 'addFoto',
             component: addFoto
         },
         {
-            path: '/findfriends',
+            path: '/findFriends',
             name: 'findFriends',
             component: findFriends
         },
         {
             path: '/friendslist',
             name: 'friendslist',
-            component: findFriends
+            component: friendslist
         },
         {
             path:'/hilfe',
-            name:'Hilfe',
+            name:'hilfe',
             component: Hilfe
         },
         {
