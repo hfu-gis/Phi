@@ -53,7 +53,15 @@
             <v-icon>mdi-help</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Hilfe</v-list-item-title>
+            <v-list-item-title>Help</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name: 'Imprint'}">
+          <v-list-item-action>
+            <v-icon>mdi-account-card-details</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Imprint</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -110,10 +118,14 @@
       </v-container>
     </v-content>
 
-    <v-footer app>
-      <span>&copy; 2019</span>
+    <v-footer class="footer" app>
+      <section class="cright">
+        &copy; {{ new Date().getFullYear() }}
+        <strong>Travelmap</strong>
 
+      </section>
     </v-footer>
+
   </v-app>
 </template>
 
