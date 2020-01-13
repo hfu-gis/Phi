@@ -1,80 +1,45 @@
-<template>
-    <div class="body-1">
-        <!-- HTML-Code aus dem Body-Tag hier einfügen -->
+<form class="box" method="post" action="" enctype="multipart/form-data">
+    <div class="box__input">
+        <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
+               multiple/>
 
-
-        <header><h1 class="h1">Fotos hinzufügen</h1></header>
-
-
-        <form class="box" method="post" action="" enctype="multipart/form-data">
-            <div class="box__input">
-                <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
-                       multiple/>
-
-                <button class="box__button" type="submit">Upload</button>
-            </div>
-        </form>
+        <button class="box__button" type="submit">Upload</button>
     </div>
+</form>
+<template>
+    <v-row>
+        <v-col cols="12" sm="6" offset-sm="3">
+            <v-card>
+                <v-container fluid>
+                    <v-row>
+                        <v-col
+                                v-for="n in 9"
+                                :key="n"
+                                class="d-flex child-flex"
+                                cols="4"
+                        >
+                            <v-card flat tile class="d-flex">
+                                <v-img
+                                        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+                                        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                                        aspect-ratio="1"
+                                        class="grey lighten-2"
+                                >
+                                    <template v-slot:placeholder>
+                                        <v-row
+                                                class="fill-height ma-0"
+                                                align="center"
+                                                justify="center"
+                                        >
+                                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                                        </v-row>
+                                    </template>
+                                </v-img>
+                            </v-card>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-card>
+        </v-col>
+    </v-row>
 </template>
-
-<script>
-    export default {
-        // gebt jeder Page einen eigenen Namen
-        name: 'template',
-
-        // benötigte Komponenten
-        components: {},
-
-        // entspricht den HTML-Attributen
-        props: {},
-
-        // Variablen-Speicher
-        data() {
-            return {}
-        },
-
-        // reagieren auf prop-Veränderung
-        watch: {},
-
-        // interne Methoden
-        methods: [],
-
-        // Initialisierung
-        created() {}
-    }
-</script>
-
-<style scoped>
-    /* CSS für diese Seite hier einfügen */
-    .h1{font-size: 40px; font-family: Arial; font-weight: lighter; margin-top: -60%}
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-image: url("https://wallpaperplay.com/walls/full/7/9/a/184079.jpg");
-        background-size: cover;
-    }
-
-
-    /* Add background color to the top navigation */
-    .topnav {
-        background-color: cornflowerblue;
-        overflow: hidden;
-    }
-
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-
-    .topnav a.active {
-        background-color: mediumslateblue;
-        color: white;
-    }
-</style>
