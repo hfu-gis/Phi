@@ -24,6 +24,7 @@
             <v-list-item-title>Find Friends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link :to="{name:'friendslist'}">
           <v-list-item-action>
             <v-icon>mdi-account-group</v-icon>
@@ -32,6 +33,7 @@
             <v-list-item-title>Friendslist</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link :to="{name:'interaktiveWeltkarte'}">
           <v-list-item-action>
             <v-icon>mdi-map</v-icon>
@@ -40,6 +42,7 @@
             <v-list-item-title>Worldmap</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link :to="{name:'addFoto'}">
           <v-list-item-action>
             <v-icon>mdi-camera</v-icon>
@@ -48,6 +51,7 @@
             <v-list-item-title>Add Photo</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link :to="{name:'Login'}">
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
@@ -56,6 +60,7 @@
             <v-list-item-title>Login</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
         <v-list-item link :to="{name: 'hilfe'}">
           <v-list-item-action>
             <v-icon>mdi-help</v-icon>
@@ -66,6 +71,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
 
     <v-app-bar app right dark
                src="http://picsum.photos/id/912/1920/100?blur">
@@ -108,6 +114,7 @@
             </v-expand-x-transition>
         </v-col>
 
+
       <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
       </v-btn>
@@ -115,6 +122,7 @@
       <v-btn v-if="!isLoggedIn" icon :to="{name:'Login'}">
         <v-icon>mdi-login</v-icon>
       </v-btn>
+
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"  />
     </v-app-bar>
 

@@ -53,8 +53,8 @@ export default new VueRouter({
             component: Hilfe
         },
         {
-            path: '/profil',
-            name:'profil',
+            path: '/Profil',
+            name:'Profil',
             component: Profil
         },
         {
