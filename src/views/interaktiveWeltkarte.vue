@@ -1,10 +1,11 @@
 <template>
+    <v-container>
     <div>
 
 <!--        Header and text -->
         <article class="ueberschriften">  <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-            <header><h1 class="h1">interactive Worldmap</h1></header>
-            <header><h2 class="h2">choose countrys you have already been to</h2></header>
+            <header><h1 class="text-center">interactive worldmap</h1></header>
+            <p class="text-center">choose countries you have already been to</p>
 
 
 
@@ -2474,6 +2475,7 @@
         </article>
 
     </div>
+    </v-container>
 </template>
 
 <script>
