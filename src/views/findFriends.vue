@@ -1,4 +1,4 @@
-<template xmlns:href="http://www.w3.org/1999/xhtml">
+<template>
     <div class="container">
         <div class="top">
             <h2>Find Friends</h2>
@@ -139,7 +139,6 @@
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background-image: url("https://wallpaperplay.com/walls/full/7/9/a/184079.jpg");
         background-size: cover;
     }
 
