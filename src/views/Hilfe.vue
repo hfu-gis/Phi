@@ -26,7 +26,77 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
             </v-expansion-panels>
+            <p></p>
+
+            <v-card>
+                <v-card-text class="ma-10">
+            <p>Contact our Support Team:</p>
+
+            <v-col cols="11">
+                <v-text-field
+                        outlined
+                        clearable
+                        label="Email"
+                        type="text"
+                >
+                    <template v-slot:prepend>
+                        <v-tooltip
+                                bottom
+                        >
+                            <template v-slot:activator="{ on }">
+                                <v-icon v-on="on">mdi-email</v-icon>
+                            </template>
+                            I'm a tooltip
+                        </v-tooltip>
+                    </template>
+                </v-text-field>
+            </v-col>
+
+            <v-col cols="11">
+                <v-text-field
+                        v-model="message"
+                        outlined
+                        clearable
+                        label="Message"
+                        type="text"
+                >
+                    <template v-slot:prepend>
+                        <v-tooltip
+                                bottom
+                        >
+                            <template v-slot:activator="{ on }">
+                                <v-icon v-on="on">mdi-help-circle-outline</v-icon>
+                            </template>
+                            I'm a tooltip
+                        </v-tooltip>
+                    </template>
+                </v-text-field>
+            </v-col>
+            </v-card-text>
+            </v-card>
+
         </v-flex>
     </v-layout>
 </v-container>
 </template>
+
+
+<script>
+    export default {
+        data: () => ({
+            message: 'type in your question',
+            loading: false,
+        }),
+
+        methods: {
+            clickMe () {
+                this.loading = true
+                this.message = 'Wait for it...'
+                setTimeout(() => {
+                    this.loading = false
+                    this.message = 'You\'ve clicked me!'
+                }, 2000)
+            },
+        },
+    }
+</script>

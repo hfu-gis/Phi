@@ -24,12 +24,12 @@
             <v-list-item-title>Find Friends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link :to="{name:'My Friends'}">
+        <v-list-item link :to="{name:'myFriends'}">
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>My Friends</v-list-item-title>
+            <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'interaktiveWeltkarte'}">
@@ -48,7 +48,7 @@
             <v-list-item-title>addFoto</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link :to="{name:'Login'}">
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
@@ -69,7 +69,13 @@
 
     <v-app-bar app right dark
                src="http://picsum.photos/id/912/1920/100?blur">
-      <v-toolbar-title>Travelmap</v-toolbar-title>
+      <v-toolbar-title>
+          <v-btn text x-large :to="{name:'Startseite'}"
+                 color="light-blue lighten-2"
+          >
+              Travelmap
+          </v-btn>
+          </v-toolbar-title>
       <v-spacer />
 
       <v-autocomplete v-model="model"
@@ -148,3 +154,4 @@
     }
   }
 </script>
+
