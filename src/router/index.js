@@ -5,7 +5,7 @@ import App from '../App'
 import Startseite from '../views/Startseite';
 import addFoto from '../views/addFoto';
 import findFriends from '../views/findFriends';
-/*import friendslist from '../views/friendslist';*/
+import friendslist from '../views/friendslist';
 import Hilfe from '../views/Hilfe';
 import Profil from '../views/Profil';
 import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
@@ -33,23 +33,23 @@ export default new VueRouter({
             component: Startseite
         },
         {
-            path: '/addfoto',
+            path: '/addFoto',
             name: 'addFoto',
             component: addFoto
         },
         {
-            path: '/findfriends',
+            path: '/findFriends',
             name: 'findFriends',
             component: findFriends
         },
         {
             path: '/friendslist',
             name: 'friendslist',
-            component: findFriends
+            component: friendslist
         },
         {
             path:'/hilfe',
-            name:'Hilfe',
+            name:'hilfe',
             component: Hilfe
         },
         {
@@ -73,7 +73,6 @@ export default new VueRouter({
             name: 'Feed',
             component: Feed
         },
-
 
     ]
 })

@@ -62,8 +62,6 @@
     </v-card>
 </template>
 
-template
-script
 
 <script>
     export default {

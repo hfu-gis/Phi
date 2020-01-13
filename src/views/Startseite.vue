@@ -71,7 +71,8 @@
                            >
                         TRACK YOUR TRAVELS{{ selected }}
                         <v-spacer>
-                        Keep your family up to date about your location and adventures.
+                        Keep your family and friends up to date about your location and adventures.
+
                         </v-spacer>
                     </p>
                     </v-card-text>
