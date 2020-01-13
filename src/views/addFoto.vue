@@ -10,17 +10,17 @@
                        font="Helvetica"
                     >
                         <v-btn text x-large :to="{}"
-                               color="light-blue lighten-2"
+                               style="color: cornflowerblue"
                         >
                             YOUR PHOTOS</v-btn>
 
                     </p>
                     <form class="box" method="post" action="" enctype="multipart/form-data">
-                        <div class="box__input">
+                        <div class="box__input" style="color: cornflowerblue" >
                             <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
-                                   multiple/>
+                                   multiple style="color: cornflowerblue"/>
 
-                            <v-btn class="box__button" type="submit" color="light-blue ">
+                            <v-btn class="box__button" type="submit" style="color: cornflowerblue">
                                 Upload</v-btn>
                         </div>
                     </form>
@@ -61,7 +61,7 @@
 </template>
 
 <style>
-    .box__button{ color: lightblue}
+    .box__button{ color: pink}
     .box__input{ color: grey}
 </style>
 
