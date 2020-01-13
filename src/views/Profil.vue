@@ -14,6 +14,21 @@
         <a href="#"><i class="fa fa-facebook"></i></a>
         <p><button>Contact</button></p>
     </div>
+    <v-simple-table dense>
+         v-slot:default>
+            <thead>
+            <tr>
+                <th class="text-left">visitedcountries</th>
+                <th class="text-left">countries to visit</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="item in desserts" :key="item.name">
+                <td>{{ item.name }}</td>
+                <td>{{ item.calories }}</td>
+            </tr>
+            </tbody>
+    </v-simple-table>
 </template>
 
 <style>
