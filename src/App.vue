@@ -24,12 +24,12 @@
             <v-list-item-title>Find Friends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link :to="{name:'myFriends'}">
+        <v-list-item link :to="{name:'friendslist'}">
           <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>myFriends</v-list-item-title>
+            <v-list-item-title>Friendslist</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name:'interaktiveWeltkarte'}">
@@ -53,7 +53,7 @@
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Logout</v-list-item-title>
+            <v-list-item-title>Login</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link :to="{name: 'Hilfe'}">

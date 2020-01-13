@@ -10,8 +10,8 @@
                         Help
                     </h1>
                 <p class="text ma-10">
-                    Have any questions or problems with our app?
-                    Someone already might have had the same issue. Have a look at the most asked questions below or write a message to our Support team and we'll get back to you asap.
+                    Have any questions about Travelmap?
+                    Someone already might have had the same question. Have a look at the frequently asked questions below or write a message to our Support team and we'll get back to you asap.
                 </p>
                 </v-card-text>
             </v-card>
@@ -84,7 +84,7 @@
 <script>
     export default {
         data: () => ({
-            message: 'type in your question',
+           message: 'Type in your question',
             loading: false,
         }),
 
