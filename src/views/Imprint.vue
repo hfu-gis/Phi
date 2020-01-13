@@ -13,6 +13,9 @@
                 Malte Krolik
             </h3>
             <h4 class="h4">in cooperation with the University Furtwangen</h4>
+            <h5 class="h5">contact:<br>
+            contact@travelmap.com<br>
+            phone: 123 45678</h5>
 
 
 
@@ -78,10 +81,11 @@
         float: left;
     }
 
-    .h1{font-size: 70px; font-family: Arial; font-weight: lighter}
-    .h2{font-size:35px; font-family: Arial; font-weight: lighter; margin-top: 50px}
-    .h3{font-size:25px; font-family: Arial; font-weight: lighter; margin-top: 50px}
-    .h4{font-size:20px; font-family: Arial; font-weight: lighter; margin-top: 50px}
+    .h1{font-size:60px; font-family: Arial; font-weight: lighter}
+    .h2{font-size:25px; font-family: Arial; font-weight: lighter; margin-top: 50px}
+    .h3{font-size:25px; font-family: Arial; font-weight: lighter; margin-top: 40px}
+    .h4{font-size:20px; font-family: Arial; font-weight: lighter; margin-top: 30px}
+    .h5{font-size:20px; font-family: Arial; font-weight: lighter; margin-top: 30px}
 
 
 </style>

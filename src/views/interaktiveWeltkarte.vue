@@ -437,7 +437,7 @@
                         </a>
                     <g class="info CA" transform="translate(30,40)">
                         <use xlink:href="#tooltipp" />
-                                <text x="700" y="10">Kanada</text>
+                                <text x="700" y="10">Canada</text>
                     </g>
 <!--                    Demokratische Republik Kongo-->
                     <a id="CD" class="CD">
@@ -2535,12 +2535,7 @@
         stroke: #333;
         stroke-width: 0.4;
     }
-/*text{*/
-/*    opacity: 0;*/
-/*    font-size: 8px;*/
-/*    fill: black;*/
-/*    pointer-events: none;*/
-/*}*/
+
     path:hover {
         fill: cornflowerblue;
 
@@ -2818,6 +2813,43 @@
         opacity: 1;
         transition: all 0.5s linear;
     }
+#EE:hover ~ .EE,
+#EE:focus ~ .EE
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+#EG:hover ~ .EG,
+#EG:focus ~ .EG
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+#ER:hover ~ .ER,
+#ER:focus ~ .ER
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+#ET:hover ~ .ET,
+#ET:focus ~ .ET
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+#EC:hover ~ .EC,
+#EC:focus ~ .EC
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+#ES:hover ~ .ES,
+#ES:focus ~ .ES
+{
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
     #FK:hover ~ .FK,
     #FK:focus ~ .FK
     {

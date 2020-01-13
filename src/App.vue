@@ -37,7 +37,7 @@
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>addFoto</v-list-item-title>
+            <v-list-item-title>addPhoto</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
@@ -118,7 +118,7 @@
       </v-container>
     </v-content>
 
-    <v-footer class="footer" app>
+    <v-footer  app>
       <section class="cright">
         &copy; {{ new Date().getFullYear() }}
         <strong>Travelmap</strong>
