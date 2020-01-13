@@ -5,21 +5,15 @@
             <br>
             <br>
             <h1 class="h1">Imprint</h1>
-            <br>
-            <br>
             <h2 class="h2">a project by</h2>
-            <br>
-            <br>
-
-<h3 class="h3">
+            <h3 class="h3">
             Isabel Schindler<br>
             Leonie Schwall<br>
             Luca Schmid<br>
-            Malte Krolik<br>
-    <br>
-    <br>
-            in cooperation with the University Furtwangen
-</h3>
+                Malte Krolik
+            </h3>
+            <h4 class="h4">in cooperation with the University Furtwangen</h4>
+
 
 
         </div>
@@ -84,9 +78,10 @@
         float: left;
     }
 
-    .h1{font-size: 80px; font-family: Arial; font-weight: lighter}
-    .h2{font-size:40px; font-family: Arial; font-weight: lighter}
-    .h3{font-size:25px; font-family: Arial; font-weight: lighter}
+    .h1{font-size: 70px; font-family: Arial; font-weight: lighter}
+    .h2{font-size:35px; font-family: Arial; font-weight: lighter; margin-top: 50px}
+    .h3{font-size:25px; font-family: Arial; font-weight: lighter; margin-top: 50px}
+    .h4{font-size:20px; font-family: Arial; font-weight: lighter; margin-top: 50px}
 
 
 </style>
