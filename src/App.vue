@@ -21,19 +21,9 @@
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Find Friends</v-list-item-title>
+            <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-
-        <v-list-item link :to="{name:'friendslist'}">
-          <v-list-item-action>
-            <v-icon>mdi-account-group</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Friendslist</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
         <v-list-item link :to="{name:'interaktiveWeltkarte'}">
           <v-list-item-action>
             <v-icon>mdi-map</v-icon>
@@ -42,26 +32,23 @@
             <v-list-item-title>Worldmap</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-
         <v-list-item link :to="{name:'addFoto'}">
           <v-list-item-action>
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Add Photo</v-list-item-title>
+            <v-list-item-title>addPhoto</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-
-        <v-list-item link :to="{name:'Login'}">
+        <v-list-item link>
           <v-list-item-action>
             <v-icon>mdi-logout</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Login</v-list-item-title>
+            <v-list-item-title>Logout</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-
-        <v-list-item link :to="{name: 'hilfe'}">
+        <v-list-item link :to="{name: 'Hilfe'}">
           <v-list-item-action>
             <v-icon>mdi-help</v-icon>
           </v-list-item-action>
@@ -69,19 +56,20 @@
             <v-list-item-title>Help</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link :to="{name: 'Imprint'}">
+          <v-list-item-action>
+            <v-icon>mdi-account-card-details</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Imprint</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-
     <v-app-bar app right dark
                src="http://picsum.photos/id/912/1920/100?blur">
-      <v-toolbar-title>
-          <v-btn text x-large :to="{name:'Startseite'}"
-                 color="light-blue lighten-2"
-          >
-              Travelmap
-          </v-btn>
-          </v-toolbar-title>
+      <v-toolbar-title>Travelmap</v-toolbar-title>
       <v-spacer />
 
       <v-autocomplete v-model="model"
@@ -114,7 +102,6 @@
             </v-expand-x-transition>
         </v-col>
 
-
       <v-btn icon :to="{name:'Profil'}">
         <v-icon>mdi-account</v-icon>
       </v-btn>
@@ -122,7 +109,6 @@
       <v-btn v-if="!isLoggedIn" icon :to="{name:'Login'}">
         <v-icon>mdi-login</v-icon>
       </v-btn>
-
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"  />
     </v-app-bar>
 
@@ -132,10 +118,14 @@
       </v-container>
     </v-content>
 
-    <v-footer app>
-      <span>&copy; 2019</span>
+    <v-footer  app>
+      <section class="cright">
+        &copy; {{ new Date().getFullYear() }}
+        <strong>Travelmap</strong>
 
+      </section>
     </v-footer>
+
   </v-app>
 </template>
 
@@ -162,4 +152,3 @@
     }
   }
 </script>
-

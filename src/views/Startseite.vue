@@ -12,9 +12,29 @@
                 v-for="(item,i) in items"
                 :key="i"
                 :src="item.src"
+                :aspect-ratio="16/9"
                 reverse-transition="scroll-x-reverse-transition"
                 transition="scroll-x-transition"
                 >
+
+                    <v-card-text class="text-center">
+                        <v-flex md3>
+                            <h1
+                                    class="ma-10"
+                                    style="color: white; font-family: Helvetica, Arial, Geneva, sans-serif; font-weight: 700; font-size: 80px; font-style: normal; line-height: 1.5;"
+                            >
+                                EXPLORE. DREAM. DISCOVER.</h1>
+                        </v-flex>
+                        <v-flex md5>
+                            <p
+                                    class="text-center ma-5"
+                                    style="color: white; font-family: 'Calibri Light'; font-weight:600; font-size: 30px; font-style: normal; line-height: 1;"
+                            >
+                                we help you turning your travel moments into lifetime memories!
+                            </p>
+                        </v-flex>
+                    </v-card-text>
+
         </v-carousel-item>
 
     </v-carousel>

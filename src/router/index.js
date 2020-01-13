@@ -11,6 +11,7 @@ import Profil from '../views/Profil';
 import interaktiveWeltkarte from "../views/interaktiveWeltkarte";
 import Registration from "../views/Registration";
 import Feed from "../views/Feed";
+import Imprint from "../views/Imprint";
 
 
 Vue.use(VueRouter)
@@ -72,6 +73,11 @@ export default new VueRouter({
             path: '/feed',
             name: 'Feed',
             component: Feed
+        },
+        {
+            path: '/imprint',
+            name: 'Imprint',
+            component: Imprint
         },
 
     ]

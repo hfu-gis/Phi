@@ -1,19 +1,34 @@
-<form class="box" method="post" action="" enctype="multipart/form-data">
-    <div class="box__input">
-        <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
-               multiple/>
 
-        <button class="box__button" type="submit">Upload</button>
-    </div>
-</form>
 <template>
     <v-row>
         <v-col cols="12" sm="6" offset-sm="3">
             <v-card>
+
+                <v-card-text>
+
+                    <p class="text-center ma-10"
+                       font="Helvetica"
+                    >
+                        <v-btn text x-large :to="{}"
+                               color="light-blue lighten-2"
+                        >
+                            YOUR PHOTOS</v-btn>
+
+                    </p>
+                    <form class="box" method="post" action="" enctype="multipart/form-data">
+                        <div class="box__input">
+                            <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
+                                   multiple/>
+
+                            <v-btn class="box__button" type="submit" color="light-blue ">
+                                Upload</v-btn>
+                        </div>
+                    </form>
+                </v-card-text>
                 <v-container fluid>
                     <v-row>
                         <v-col
-                                v-for="n in 9"
+                                v-for="n in 24"
                                 :key="n"
                                 class="d-flex child-flex"
                                 cols="4"
@@ -42,4 +57,11 @@
             </v-card>
         </v-col>
     </v-row>
+
 </template>
+
+<style>
+    .box__button{ color: lightblue}
+    .box__input{ color: grey}
+</style>
+
