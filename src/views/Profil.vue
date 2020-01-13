@@ -55,68 +55,62 @@
 
               </tr>
               <tr>
-                  <td class="tabellentext">Vereinigte staaten von amerika</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">The United States</td>
+                  <td class="tabellentext">Peru</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Australia</td>
+                  <td class="tabellentext">Great Britain</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">New Zealand</td>
+                  <td class="tabellentext">Botswana</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Italy</td>
+                  <td class="tabellentext">Canada</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Spain</td>
+                  <td class="tabellentext">Namibia</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">South Africa</td>
+                  <td class="tabellentext">Russia</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">France</td>
+                  <td class="tabellentext">Thailand</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Croatia</td>
+                  <td class="tabellentext">Brazil</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Malaysia</td>
+                  <td class="tabellentext">Colombia</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Austria</td>
+                  <td class="tabellentext">Argentina</td>
 
               </tr>
               <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">The Netherlands</td>
+                  <td class="tabellentext">Letia</td>
 
-              </tr>
-              <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
 
-              </tr>
-              <tr>
-                  <td class="tabellentext">Lorem Ipsum</td>
-                  <td class="tabellentext">Lorem Ipsum</td>
+
+
 
               </tr>
           </table>
