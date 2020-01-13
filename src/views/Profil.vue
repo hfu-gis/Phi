@@ -55,32 +55,68 @@
 
               </tr>
               <tr>
-                  <td class="tg-031e">Vereinigte staaten von amerika</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
+                  <td class="tabellentext">Vereinigte staaten von amerika</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
 
               </tr>
               <tr>
-                  <td class="tg-031e">Lorem Ipsum</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
 
               </tr>
               <tr>
-                  <td class="tg-031e">Lorem Ipsum</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
-              </tr>
-              <tr>
-                  <td class="tg-031e">Lorem Ipsum</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
 
               </tr>
               <tr>
-                  <td class="tg-031e">Lorem Ipsum</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
 
               </tr>
               <tr>
-                  <td class="tg-031e">Lorem Ipsum</td>
-                  <td class="tg-031e">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
+
+              </tr>
+              <tr>
+                  <td class="tabellentext">Lorem Ipsum</td>
+                  <td class="tabellentext">Lorem Ipsum</td>
 
               </tr>
           </table>
@@ -101,13 +137,22 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        height: 100%;
+        width: 100%;
 
+    }
+    .flexitem{
+        margin-top: 10%;
     }
 
 .tg{
     border: solid black;
     margin-left: 20%;
+    width: 400px;
 }
+    .tabellentext{
+        ;
+    }
 
 </style>
 
