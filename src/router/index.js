@@ -116,5 +116,6 @@ export default new VueRouter({
             component: Feed
         },
 
+
     ]
 })
