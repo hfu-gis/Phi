@@ -18,18 +18,68 @@
          v-slot:default>
             <thead>
             <tr>
-                <th class="text-left">visitedcountries</th>
+                <th class="text-left">visited countries</th>
                 <th class="text-left">countries to visit</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="item in desserts" :key="item.name">
-                <td>{{ item.name }}</td>
-                <td>{{ item.calories }}</td>
+                <td>{{ item.visited countries }}</td>
+                <td>{{ item.countries to visit }}</td>
             </tr>
             </tbody>
     </v-simple-table>
 </template>
+<script>
+    export default {
+        data () {
+            return {
+                desserts: [
+                    {
+                        visited countries: 'Germany',
+                        countries to visit: Nicaragua,
+                    },
+                    {
+                        visited countries: 'Italy',
+                        countries to visit: Australia,
+                    },
+                    {
+                        visited countries: 'Spain',
+                        countries to visit: Peru,
+                    },
+                    {
+                        visited countries: 'Norway',
+                        countries to visit: Sweden,
+                    },
+                    {
+                        visited countries: 'Brazil',
+                        countries to visit: South Africa,
+                    },
+                    {
+                        visited countries: 'Botswana',
+                        countries to visit: Namibia,
+                    },
+                    {
+                        visited countries: 'United States',
+                        countries to visit: Canada,
+                    },
+                    {
+                        visited countries: 'France',
+                        countries to visit: Portugal,
+                    },
+                    {
+                        visited countries: 'Poland',
+                        countries to visit: Russia,
+                    },
+                    {
+                        visited countries: 'Turkey',
+                        countries to visit: croatia,
+                    },
+                ],
+            }
+        },
+    }
+</script>
 
 <style>
     img {
