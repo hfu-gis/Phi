@@ -18,6 +18,14 @@
 
         <v-list-item link :to="{name:'findFriends'}">
           <v-list-item-action>
+            <v-icon>mdi-account-multiple-plus</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>findFriends</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name:'friendslist'}">
+          <v-list-item-action>
             <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
