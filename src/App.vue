@@ -18,19 +18,19 @@
 
         <v-list-item link :to="{name:'findFriends'}">
           <v-list-item-action>
-            <v-icon>mdi-account-multiple</v-icon>
+            <v-icon>mdi-account-multiple-plus</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Find Friends</v-list-item-title>
+            <v-list-item-title>findFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link :to="{name:'friendslist'}">
           <v-list-item-action>
-            <v-icon>mdi-account-group</v-icon>
+            <v-icon>mdi-account-multiple</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Friendslist</v-list-item-title>
+            <v-list-item-title>myFriends</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -48,7 +48,7 @@
             <v-icon>mdi-camera</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Add Photo</v-list-item-title>
+            <v-list-item-title>addPhoto</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -96,6 +96,14 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Help</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link :to="{name: 'Imprint'}">
+          <v-list-item-action>
+            <v-icon>mdi-account-card-details</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Imprint</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -161,10 +169,14 @@
       </v-container>
     </v-content>
 
-    <v-footer app>
-      <span>&copy; 2019</span>
+    <v-footer  app>
+      <section class="cright">
+        &copy; {{ new Date().getFullYear() }}
+        <strong>Travelmap</strong>
 
+      </section>
     </v-footer>
+
   </v-app>
 </template>
 
