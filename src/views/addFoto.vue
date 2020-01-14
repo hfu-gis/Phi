@@ -7,18 +7,16 @@
                 <v-card-text>
 
                     <p class="text-center ma-10"
-                       font="Helvetica"
-                    >
+                       font="Helvetica">
                         <v-btn text x-large :to="{}"
-                               style="color: cornflowerblue"
-                        >
+                               style="color: cornflowerblue">
                             YOUR PHOTOS</v-btn>
-
                     </p>
-                    <form class="box" method="post" action="" enctype="multipart/form-data">
+
+                    <form class="box" method="post" action="" enctype="multipart/form-data" >
                         <div class="box__input" style="color: cornflowerblue" >
-                            <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
-                                   multiple style="color: cornflowerblue"/>
+                            <input class="box__file"  type="file" name="files[]" id="file" data-multiple-caption="{count} files selected"
+                                   multiple/>
 
                             <v-btn class="box__button" type="submit" style="color: cornflowerblue">
                                 Upload</v-btn>
@@ -61,7 +59,7 @@
 </template>
 
 <style>
-    .box__button{ color: pink}
-    .box__input{ color: grey}
+
+
 </style>
 

@@ -3,8 +3,8 @@
     <div>
 
 <!--        Header and text -->
-        <article class="ueberschriften">  <!-- HTML-Code aus dem Body-Tag hier einfügen -->
-            <header><h1 class="text-center">interactive worldmap</h1></header>
+        <article class="ueberschriften">
+            <header><h1 class="text-center">interactive World Map</h1></header>
             <p class="text-center">choose countries you have already been to</p>
 
 
@@ -2346,7 +2346,7 @@
                          </a>
                     <g class="info US" transform="translate(40,10)">
                         <use xlink:href="#tooltipp" />
-                        <text x="650" y="10">United States</text>
+                        <text x="650" y="20">United States</text>
                     </g>
 <!--                    Uruguay-->
                     <a id="UY" class="UY">
