@@ -8,7 +8,7 @@
 
         <v-app-bar
                 dark
-                color="blue"
+                color="light-blue lighten-3"
         >
             <v-text-field
                     v-model="search"
@@ -50,7 +50,7 @@
                                         v-text="item.name"
                                 ></v-card-title>
                                 <div class="my-2">
-                                    <v-btn color="error" dark large>Send Friend Request</v-btn>
+                                    <v-btn color="light-blue lighten-2" dark large>Send Friend Request</v-btn>
                                 </div>
 
 
@@ -141,7 +141,7 @@
 
     /* Add background color to the top navigation */
     .topnav {
-        background-color: cornflowerblue;
+        background-color: lightblue;
         overflow: hidden;
     }
 
@@ -183,7 +183,7 @@
         float: left;
         width: 20%;
         padding: 10px;
-        background: cornflowerblue;
+        background: lightblue;
         color: white;
         font-size: 17px;
         border: 0px solid grey;
@@ -192,7 +192,7 @@
     }
 
     .btn {
-        background-color: cornflowerblue;
+        background-color: lightblue;
         border: none;
         color: white;
         padding: 12px 16px;
@@ -202,6 +202,6 @@
 
     /* Darker background on mouse-over */
     .btn:hover {
-        background-color: RoyalBlue;
+        background-color: lightblue;
     }
 </style>
