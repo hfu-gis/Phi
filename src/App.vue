@@ -115,6 +115,7 @@
       <v-toolbar-title>
           <v-btn text x-large :to="{name:'Startseite'}"
                  color="light-blue lighten-2"
+                 style="font-family: 'Garden Grown US D'; font-size: 30px;"
           >
               Travelmap
           </v-btn>

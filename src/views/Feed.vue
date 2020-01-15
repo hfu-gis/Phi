@@ -73,7 +73,6 @@
 
     </v-card>
 
-
 </template>
 
 <script>
